@@ -1,3 +1,5 @@
+https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-demo.mp4
+
 # RESOLVE
 
 **Verifiable exception resolution for autonomous agents.**
@@ -18,7 +20,9 @@ AGENT RESUMED ← ResolutionReceipt ← SuccessContract ← PAID CAPABILITY
 
 ## Demo
 
-🎥 Demo video: coming before submission
+🎥 [Watch or download the two-minute Resolve demo](https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-demo.mp4) — 1080p, with narration and captions.
+
+Recorded execution with edited timing: real sandbox settlements, deterministic provider payloads, and a synthetic validation-only benchmark. AI-generated narration.
 
 Run locally: [execution demo](http://localhost:3000/demo) · [benchmark](http://localhost:3000/benchmark)
 
