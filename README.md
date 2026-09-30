@@ -1,223 +1,156 @@
-https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-final-submission.mp4
-
-# RESOLVE
+# Resolve
 
 **Verifiable exception resolution for autonomous agents.**
 
-## Software throws exceptions. AI agents guess.
+When an agent gets stuck, Resolve can buy a missing capability,
+verify the result, escalate when necessary, or stop safely.
 
-**Resolve gives autonomous agents an exception handler they can buy.**
-
-An autonomous agent reaches a boundary it cannot safely handle. Resolve turns that boundary into a machine-readable contract, selects a paid resolver within budget, and independently verifies its output. Only a valid resolution receipt lets the original agent continue.
-
-```text
-AGENT RUNNING → AgentException → ResolutionContract → Resolution Ladder
-                                                           ↓
-AGENT RESUMED ← ResolutionReceipt ← SuccessContract ← PAID CAPABILITY
-```
-
-**NO VALID RESOLUTION RECEIPT = NO AUTOMATIC RESUME**
+![A paid policy resolution: independent validation, verified receipt and resumed agent](docs/assets/demo-policy.png)
 
 ## Demo
 
-🎥 [Watch or download the final three-minute Resolve demo](https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-final-submission.mp4) — 1080p, light theme, with narration, captions, and original sound effects.
+[Watch the 3-minute demo](https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-final-submission.mp4)
 
-Recorded UI replays and captured CLI output with edited timing: real sandbox settlements, deterministic provider payloads, and a synthetic validation-only benchmark. AI-generated narration.
+Recorded UI replays and captured CLI output with edited timing. Real sandbox payments, deterministic provider payloads, and a validation-only benchmark. AI-generated narration.
 
-Run locally: [execution demo](http://localhost:3000/demo) · [benchmark](http://localhost:3000/benchmark)
+Copyable video URL:
+```text
+https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-final-submission.mp4
+```
 
-| Flow | What happens |
+## Why
+
+An agent that cannot safely finish a task can guess, stop, or buy a more expensive capability. Resolve makes the required outcome explicit, buys a useful resolution attempt within budget, and checks the result before continuing.
+
+## How it works
+
+```text
+AgentException → ResolutionContract → resolver selection → x402 payment
+                                                               ↓
+agent resumes ← ResolutionReceipt ← independent SuccessContract validation
+```
+
+**No valid receipt = no automatic resume.** An answer alone is insufficient: a `ResolutionReceipt` requires both settled payment and independent `PASS` validation. Partial evidence can justify a cheaper first attempt; it cannot declare the whole contract satisfied. Failed validation triggers escalation when another eligible resolver fits the remaining budget and deadline.
+
+## Example flows
+
+| Flow | Observed behavior |
 | :--- | :--- |
-| **Policy conflict** | An $850 MacBook offer plus a home-address request triggers `POLICY_CONFLICT`. A paid verifier returns a counteroffer; deterministic checks enforce the $900 floor and privacy rule. A receipt unlocks the same agent, which resumes at $900 without disclosing the address. |
-| **Capability escalation** | A cheap resolver returns partial evidence → `VALIDATION_FAILED` → `ESCALATING` → a richer resolver supplies all required evidence → `PASS` → receipt → resume. Provider payloads are deterministic fixtures; both payments are real sandbox settlements. |
-| **Economic abstention** | The cheapest eligible resolver exceeds budget → `ABSTAINED` → **$0 spent, no receipt, no resume**. |
+| Policy conflict | $850 offer → `POLICY_CONFLICT` → $0.001 verifier → `PASS` → receipt → same agent resumes at $900 without revealing a home address. |
+| Capability escalation | $0.001 partial evidence → `VALIDATION_FAILED` → `ESCALATING` → $0.0015 richer evidence → `PASS` → receipt → resume. Total: $0.0025. |
+| Economic abstention | Budget below the cheapest eligible resolver → `ABSTAINED` → $0 spent, no receipt, no resume. |
 
-![Policy resolution with sandbox payment, validation and resumed agent](docs/assets/demo-policy.png)
+Payments above are **sandbox settlements**. The policy resolver is deterministic; the evidence providers return explicitly labeled deterministic fixtures, not live OCR/Vision responses.
 
-The execution path physically breaks at the exception and reconnects only after validation passes and a `ResolutionReceipt` exists. The interface follows backend SSE events. **Replay observed run** replays that run's event tape without another payment or model call; **Reset demo** clears presentation state, not payment history.
+![Partial evidence fails, then a richer paid resolver passes and the agent resumes](docs/assets/demo-escalation.png)
 
-![Partial evidence fails before escalation to the richer resolver](docs/assets/demo-escalation.png)
+The web demo follows backend SSE events. **Replay observed run** replays its event tape without another payment or model call. **Reset demo** clears presentation state, not payment history.
 
-## Why an agent would buy this
+## Results
 
-Without an exception handler, an agent that cannot finish safely has poor options: guess, stop, or buy the most expensive capability every time. Resolve makes the required outcome explicit first, buys the minimum useful capability, validates it, and escalates only when necessary and affordable.
-
-A cheap resolver can contribute useful partial evidence without satisfying the entire contract. It earns a place in the ladder, **not permission to declare success**.
-
-## Results: validation-only benchmark
-
-**Resolve matched the premium strategy's validator success while using a lower hypothetical cost per verified result.**
-
-All three strategies run the same **44 deterministic synthetic fixtures**. Here, “verified” means the fixture passed the deterministic validator, not that a paid agent task completed.
+All three strategies evaluate the same **44 deterministic fixtures**. “Verified” here means passing the deterministic validator, not completion of a paid agent task.
 
 | Metric | CHEAPEST_ONLY | PREMIUM_ONLY | RESOLVE |
 | :--- | ---: | ---: | ---: |
 | Validator success | 45.5% (20/44) | 68.2% (30/44) | 68.2% (30/44) |
-| Cost / verified result* | $0.0017 | $0.0025 | $0.0018 |
+| Cost / verified* | $0.0017 | $0.0025 | $0.0018 |
 | Total spend* | $0.0340 | $0.0760 | $0.0550 |
 | Validation failures | 14 | 4 | 18 |
 | Escalations | 0 | 0 | 14 |
 | Abstentions | 24 | 14 | 14 |
 
-\* **Hypothetical resolver quotes. The benchmark executes no payments, issues no receipts, and resumes no agents.** These are synthetic benchmark economics, not observed provider spend or production economics. Validation failures count attempts; an escalated case can fail once and then succeed.
+\* **Hypothetical resolver quotes. The benchmark executes no payments, issues no receipts, and resumes no agents.** Cost per verified result includes failed attempts. Validation failures count attempts; an escalated case can fail once and then pass. Zero unverified resumes in this harness is not evidence of live resume safety.
 
-![Benchmark strategy lanes showing actual fixture traces and hypothetical costs](docs/assets/benchmark.png)
+![Measured benchmark results on 44 deterministic fixtures](docs/assets/benchmark.png)
 
-## What is real, and what is synthetic?
+![Three execution strategies, with actual fixture attempts and hypothetical costs](docs/assets/benchmark-strategies.png)
 
-| Component | Status |
-| :--- | :--- |
-| OpenAI agent interruption/resume | Live OpenAI Agents JS; continuation of the same paused run |
-| x402 / Solana payment | Real **sandbox** settlement with ephemeral in-memory signers |
-| SuccessContract validation | Live deterministic logic, independent of resolver output |
-| ResolutionReceipt gating | Live; requires `SETTLED` payment **and** `PASS` validation |
-| UI | Live SSE plus replayable observed event tapes |
-| Resolver payloads in the demo | Deterministic policy logic and explicitly labeled synthetic evidence fixtures |
-| 44-case benchmark | Deterministic synthetic fixtures; validation-only |
-| Benchmark dollar amounts | Hypothetical quotes; no transfers |
-| Mainnet catalog settlement | **Not completed or claimed** |
-
-Sandbox settlement is checked against both the payment response and RPC transaction evidence, including the expected USDC balance changes. The sandbox uses a mainnet-compatible chain identifier; this does **not** make it a mainnet payment. Agent messages are written to a local transcript, not sent to a buyer.
+[Benchmark output](outputs/benchmark.json) · [Recorded live readiness checks](outputs/backend-readiness/summary.json) · [Sandbox payment proof](outputs/payment-proof.json)
 
 ## Architecture
 
 ```mermaid
 flowchart TD
-    A[Consumer Agent] --> B[AgentException]
-    B --> C[ResolutionContract]
-    C --> D[Planner: resolver selection]
-    D --> E[BudgetGuard]
-    E --> F[Resolution Ladder: verifier or specialist]
-    F --> G[Bounded machine payment]
-    G --> H[Resolver output]
-    H --> I[Independent SuccessContract validation]
-    I -->|FAIL: budget and deadline permit| F
-    I -->|PASS + SETTLED| J[ResolutionReceipt]
-    J --> K[Original agent resumes]
-    E -->|No eligible resolution| L[ABSTAINED]
+    A[OpenAI agent: paused run] --> B[AgentException]
+    subgraph Resolve Runtime
+        B --> C[ResolutionContract]
+        C --> D[Planner / BudgetGuard]
+        D --> E[Selected resolver / x402 sandbox payment]
+        E --> F[Resolver output]
+        F --> G[Independent SuccessContract validator]
+        G -->|FAIL: budget and deadline permit| D
+        G -->|PASS + SETTLED| H[ResolutionReceipt]
+        D -->|No eligible attempt| I[ABSTAINED]
+    end
+    H --> J[Original agent resumes with verified result]
 ```
 
-Resolver output cannot self-certify: the independent validator evaluates the original `SuccessContract`. A settled payment alone cannot issue a receipt. The agent's approved tool consumes the verified result, never its original unsafe proposed message.
+TypeScript, Node.js, Express, Next.js/React, Zod, OpenAI Agents JS, x402/Solana, SSE and Vitest. Settlement is checked against the payment response and RPC transaction evidence. Agent messages go to a local transcript, not to a buyer.
 
-| Path | Responsibility |
-| :--- | :--- |
-| [`packages/core`](packages/core) | Contracts, planner, BudgetGuard, resolution ladder, validator and event reducer |
-| [`packages/payments`](packages/payments) | Bounded x402/SVM payment and settlement verification |
-| [`packages/agent-runtime`](packages/agent-runtime) | OpenAI agent interruption and receipt-gated continuation |
-| [`packages/resolvers`](packages/resolvers) | Policy verifier, fixture evidence and catalog adapters |
-| [`packages/benchmark`](packages/benchmark) | Shared deterministic fixture evaluation |
-| [`apps/api`](apps/api) · [`apps/web`](apps/web) | Loopback Express API/SSE and Next.js demo/benchmark |
+## Run locally
 
-**Stack:** TypeScript · Node.js · Express · Next.js / React · Tailwind · Zod · OpenAI Agents JS · x402 / Solana · SSE · Vitest.
-
-## Quick start
-
-Use Node.js 22.12+ to satisfy dependency engine requirements. Verification on this machine also passed on Node.js 20.20.2 with engine warnings.
+Use Node.js **22.12+** to satisfy dependency engine requirements.
 
 ```sh
 git clone https://github.com/ikrrispatel/resolve.git
 cd resolve
-npm ci
-cp .env.example .env
-# Set OPENAI_API_KEY in .env for live agent pause/resume.
+npm install
+npm run demo:policy
+npm run demo:escalate
+npm run demo:abstain
+npm run benchmark
+```
+
+The three demo commands default to **core-only** payment/validation runs; they do not claim agent continuation. Sandbox calls need network access and use disposable in-memory signers. No Pay account or mainnet wallet is required. The benchmark needs neither credentials nor payment access.
+
+For the web interface and live agent, copy `.env.example` to `.env` and set `OPENAI_API_KEY` locally. Never commit it. `OPENAI_MODEL` is optional and defaults to `gpt-4.1-mini`; model calls use your API account.
+
+```sh
 npm run dev
 ```
 
-Open [localhost:3000/demo](http://localhost:3000/demo) and [localhost:3000/benchmark](http://localhost:3000/benchmark). The API listens on loopback port **4310**; the web app uses **3000**. Only one demo run is active at a time.
-
-| Environment variable | Requirement |
-| :--- | :--- |
-| `OPENAI_API_KEY` | Required for the live OpenAI agent. Set locally; never commit it. Live model calls use your API account. |
-| `OPENAI_MODEL` | Optional; defaults to `gpt-4.1-mini`. |
-| `PORT` | Optional API port; keep `4310` for the default web setup. |
-
-The sandbox requires network access to its hosted RPC. It creates disposable in-memory signers; no Pay account, mainnet wallet, or wallet file is needed. The pure benchmark needs neither credentials nor payment access. Without an OpenAI key, core payment/validation commands work but do **not** demonstrate live agent resume.
+Open `/demo` or `/benchmark` on the local web server at port **3000**; the API uses port **4310**. Only one web demo run is active at a time. Add `-- --agent` to a demo command for the real OpenAI pause/resume path, or `-- --verbose` for full event details.
 
 ```sh
-npm run payment:smoke                 # Real sandbox 402 → paid retry → 200
-npm run demo:policy -- --agent        # Live agent + paid policy resolution
-npm run demo:escalate -- --agent      # Live agent + paid fixture escalation
-npm run demo:abstain -- --agent       # Live agent stays paused; no payment
-npm run demo:reset                    # Clear in-memory demo presentation state
 npm test
 npm run typecheck
 npm run build
 ```
 
-## Hosted frontend configuration
+Hosted frontends require `RESOLVE_API_ORIGIN` at build time and a separately running API configured with `RESOLVE_FRONTEND_ORIGIN`. Keep `OPENAI_API_KEY` on the API server, never in a client environment variable. No public live deployment is claimed here.
 
-For Vercel, use `apps/web` as the Next.js root, install with
-`cd ../.. && npm ci`, and build with `cd ../.. && npm run build`. Set **`RESOLVE_API_ORIGIN`** at build time to the reachable
-Resolve API origin (without `/api`). The frontend uses same-origin `/api/*`
-requests; Next.js forwards them server-side, including SSE. Production builds
-never default to a localhost backend. Without this setting, the pages render
-but live demo and benchmark requests remain unavailable.
+## Project structure
 
-On the API server, set `RESOLVE_FRONTEND_ORIGIN` to the exact hosted frontend
-origin. Other origins remain denied; local development origins stay supported.
-Keep `OPENAI_API_KEY` on the Resolve API server, never in a `NEXT_PUBLIC_`
-variable. This frontend change does not deploy the process-local Express
-runtime or make it a public multi-user service; a hosted backend and its access
-controls remain a separate deployment prerequisite.
-
-## Terminal execution trace
-
-The CLI uses a compact execution path: `▶` running, `╳` exception or blocked
-branch, and `●` a paid, independently verified repair. Selected resolvers and
-payments use cyan; failures use orange-red; receipts and actual resumes use
-green. Metadata stays muted. Output is limited to 64 columns, uses no color
-dependency, and respects `NO_COLOR` and redirected output.
-
-The existing `demo:policy`, `demo:escalate`, and `demo:abstain` commands render
-actual backend events. Their default is **core-only**: a receipt does not claim
-agent continuation. Add `-- --agent` for the live OpenAI interruption/resume
-path. Add `-- --verbose` for event details, or combine both flags. No artificial
-presentation delays are added. `npm run benchmark` prints the measured summary
-while preserving the full JSON artifact; `-- --verbose` also prints that JSON.
-
-## Reproduce the benchmark
-
-```sh
-npm run benchmark
+```text
+apps/web/               Next.js execution demo and benchmark
+apps/api/               Express runtime and SSE
+packages/core/          Contracts, planner, BudgetGuard, validation and events
+packages/payments/      x402/SVM settlement verification
+packages/agent-runtime/ OpenAI interruption and receipt-gated continuation
+packages/resolvers/     Policy verifier, evidence fixtures and catalog adapters
+packages/benchmark/     Shared fixture evaluation
+scripts/                CLI demos, benchmark and verification
+docs/                  Design documents and presentation assets
 ```
 
-The harness writes [`outputs/benchmark.json`](outputs/benchmark.json); `/benchmark` computes from the same implementation. Each strategy sees identical policy, partial-evidence, full-evidence and insufficient-budget cases, plus malformed/invalid fixture outputs. It uses the real planner and validator with deterministic payloads and quoted attempt costs. The named failure fixtures are invalid outputs, not live provider outage measurements; separate regression tests exercise timeout and payment-failure handling.
+Design sources, in priority order: [AI_RULES](docs/AI_RULES.md), [PRD](docs/PRD.md), [Architecture](docs/Architecture.md), [PLAN](docs/PLAN.md), [REFERENCE_REPOS](docs/REFERENCE_REPOS.md), [HYPER_PROMPT](docs/HYPER_PROMPT.md). These describe the original plan; the implementation and limitations above describe the shipped demo.
 
-Validator success rate is passing cases / 44. Cost per verified resolution is total quoted attempt cost / passing cases, including quotes spent on failed attempts. Escalations count moves to another resolver; abstentions count cases without a valid result. No model judge, payment adapter or agent resume runs in this benchmark. Its zero unverified-resume count is therefore **not evidence of resume safety**, and evidence-field presence does **not** establish product authenticity.
+## What the demo proves
 
-For live safety checks, run:
+- Real sandbox x402 payment settlement.
+- Independent validation before resume.
+- Receipt-gated continuation of the same OpenAI agent run.
+- Automatic escalation after partial evidence fails validation.
+- Budget-based abstention with no payment or resume.
 
-```sh
-npx tsx scripts/backend-readiness.ts
-```
+## What it does not claim
 
-This separately tests three live runs each of policy (with a $975 floor), escalation and abstention, plus settled-payment/failed-validation gating. It verifies repeated SSE replay and reset. Reviewed, non-secret event tapes and the run summary are in [`outputs/backend-readiness`](outputs/backend-readiness). [`outputs/payment-proof.json`](outputs/payment-proof.json) records the sandbox payment smoke result.
+- Mainnet catalog settlement or production-scale reliability.
+- Authenticity detection from deterministic evidence fixtures.
+- Real-world provider economics from the validation-only benchmark.
 
-## Reliability boundaries
+Live runs depend on hosted sandbox and OpenAI availability. Run state is process-local and disappears on restart; SQLite is deferred. Receipts are internal records, not externally authenticated credentials for arbitrary clients. Production access controls and a deployed marketplace are outside this prototype.
 
-1. **No receipt, no resume.** Receipt schema, contract correspondence and independent validation gate the original agent's continuation.
-2. **Resolver output is not success.** Partial, malformed or invalid output cannot silently become `PASS`.
-3. **Budgets are enforced in code.** Attempt and total caps are checked before payment; money comparisons use integer microdollars.
-4. **Unknown state fails closed.** Unknown payment state stops the ladder. Failed validation cannot issue a receipt, even after settlement.
+## License
 
-Regression tests also cover duplicate attempts, settlement evidence, stale/malformed UI receipts, mismatched resume events, provider failures and deadlines. These are prototype checks, not a production reliability guarantee.
-
-## Limitations
-
-- The demonstrated payment path is sandbox-only. Mainnet catalog signing did not complete; no mainnet settlement is claimed.
-- The resolver set is deliberately small. Evidence payloads and benchmark fixtures are synthetic, not live OCR/Vision results or authenticity detection.
-- Hosted sandbox and OpenAI availability affect live runs. Replay is an observed tape, not another live execution.
-- Run state is process-local; a restart discards it. SQLite is deferred. There is no deployed marketplace or production authorization infrastructure.
-- This is a hackathon prototype. Receipts are internally issued records, not externally authenticated credentials for arbitrary untrusted clients.
-
-Design source priority: [AI_RULES](docs/AI_RULES.md) → [PRD](docs/PRD.md) → [Architecture](docs/Architecture.md) → [PLAN](docs/PLAN.md) → [REFERENCE_REPOS](docs/REFERENCE_REPOS.md) → [HYPER_PROMPT](docs/HYPER_PROMPT.md).
-
-## Hackathon
-
-**Agent Hackathon — San Francisco — Sep 30, 2026**
-
-Prompt: “Build something an agent would buy.”
-
-[MIT licensed](LICENSE).
-
-**The agent doesn't buy a model. It buys a verified way forward.**
+[MIT](LICENSE).
