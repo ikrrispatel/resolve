@@ -3,7 +3,7 @@
   "paymentExecuted": false,
   "receiptsIssued": 0,
   "claims": "Measured validator outcomes on shared synthetic fixtures; costs are hypothetical catalog/local quotes. No settlement or agent-resume proof.",
-  "createdAt": "2026-09-30T20:16:39.312Z",
+  "createdAt": "2026-09-30T20:46:15.689Z",
   "results": [
     {
       "strategy": "CHEAPEST_ONLY",
@@ -21,7 +21,7 @@
       },
       "unverifiedResumes": 0,
       "resumes": 0,
-      "evaluationLatencyMs": 1.7267909999999915,
+      "evaluationLatencyMs": 1.922083999999984,
       "cases": [
         {
           "id": "synthetic-0",
@@ -631,7 +631,7 @@
       },
       "unverifiedResumes": 0,
       "resumes": 0,
-      "evaluationLatencyMs": 0.26045799999999986,
+      "evaluationLatencyMs": 0.2861249999999984,
       "cases": [
         {
           "id": "synthetic-0",
@@ -1242,7 +1242,7 @@
       },
       "unverifiedResumes": 0,
       "resumes": 0,
-      "evaluationLatencyMs": 0.2293329999999969,
+      "evaluationLatencyMs": 0.24891700000000583,
       "cases": [
         {
           "id": "synthetic-0",

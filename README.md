@@ -140,6 +140,21 @@ npm run typecheck
 npm run build
 ```
 
+## Terminal execution trace
+
+The CLI uses a compact execution path: `▶` running, `╳` exception or blocked
+branch, and `●` a paid, independently verified repair. Selected resolvers and
+payments use cyan; failures use orange-red; receipts and actual resumes use
+green. Metadata stays muted. Output is limited to 64 columns, uses no color
+dependency, and respects `NO_COLOR` and redirected output.
+
+The existing `demo:policy`, `demo:escalate`, and `demo:abstain` commands render
+actual backend events. Their default is **core-only**: a receipt does not claim
+agent continuation. Add `-- --agent` for the live OpenAI interruption/resume
+path. Add `-- --verbose` for event details, or combine both flags. No artificial
+presentation delays are added. `npm run benchmark` prints the measured summary
+while preserving the full JSON artifact; `-- --verbose` also prints that JSON.
+
 ## Reproduce the benchmark
 
 ```sh

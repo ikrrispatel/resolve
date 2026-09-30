@@ -2,13 +2,13 @@
   "mode": "SANDBOX_POLICY",
   "events": [
     {
-      "id": "4d4abbe4-fdb2-45ac-810a-2676f75ef149",
-      "runId": "2d0f8fe1-856b-4548-a425-3df2f6901e4b",
+      "id": "b6d68a42-72ae-449e-8270-ee9c33df931f",
+      "runId": "43bc6831-65f4-47cc-8299-8170a31cbd60",
       "sequence": 0,
       "type": "EXCEPTION_CREATED",
-      "at": "2026-09-30T20:17:21.986Z",
+      "at": "2026-09-30T20:47:24.169Z",
       "data": {
-        "exceptionId": "53ab52e2-e92a-41b5-aa3e-1b2d428cbe4f",
+        "exceptionId": "e5da5f27-c27d-47df-97cf-3e526b6e84f8",
         "type": "POLICY_CONFLICT",
         "task": "Sell my MacBook",
         "mode": "SANDBOX_POLICY",
@@ -17,13 +17,13 @@
       }
     },
     {
-      "id": "8c16af2b-9953-469f-87db-7bd5faab4f26",
-      "runId": "2d0f8fe1-856b-4548-a425-3df2f6901e4b",
+      "id": "d5c5904f-9409-4648-b636-8a1e67654ef1",
+      "runId": "43bc6831-65f4-47cc-8299-8170a31cbd60",
       "sequence": 1,
       "type": "CONTRACT_CREATED",
-      "at": "2026-09-30T20:17:21.989Z",
+      "at": "2026-09-30T20:47:24.172Z",
       "data": {
-        "contractId": "3681b357-45b3-49bb-9129-b6b800b2dd42",
+        "contractId": "2d347681-eb6a-4288-b6da-03c939d2ce53",
         "budget": {
           "maxTotal": 0.05,
           "maxAttempt": 0.05
@@ -37,11 +37,11 @@
       }
     },
     {
-      "id": "a33ec313-0e98-4366-9a8c-f3bb45f5b900",
-      "runId": "2d0f8fe1-856b-4548-a425-3df2f6901e4b",
+      "id": "8a18777c-20cd-44f0-84f2-ea6bf04655b0",
+      "runId": "43bc6831-65f4-47cc-8299-8170a31cbd60",
       "sequence": 2,
       "type": "RESOLVER_SELECTED",
-      "at": "2026-09-30T20:17:21.989Z",
+      "at": "2026-09-30T20:47:24.173Z",
       "data": {
         "resolverId": "policy-verifier",
         "name": "Policy Verifier",
@@ -50,56 +50,56 @@
       }
     },
     {
-      "id": "e523eb75-4f51-437a-b9d9-3a075e4dd060",
-      "runId": "2d0f8fe1-856b-4548-a425-3df2f6901e4b",
+      "id": "f4344a7d-bbb3-4ae7-9ffc-efb0551e9a58",
+      "runId": "43bc6831-65f4-47cc-8299-8170a31cbd60",
       "sequence": 3,
       "type": "PAYMENT_REQUIRED",
-      "at": "2026-09-30T20:17:21.997Z",
+      "at": "2026-09-30T20:47:24.180Z",
       "data": {
         "amount": 0.001
       }
     },
     {
-      "id": "5a4663f1-34e2-4003-93df-cce6c4bdaac3",
-      "runId": "2d0f8fe1-856b-4548-a425-3df2f6901e4b",
+      "id": "add6fc0c-4ecd-4702-8bcc-471219121a1c",
+      "runId": "43bc6831-65f4-47cc-8299-8170a31cbd60",
       "sequence": 4,
       "type": "PAYMENT_AUTHORIZED",
-      "at": "2026-09-30T20:17:21.997Z",
+      "at": "2026-09-30T20:47:24.180Z",
       "data": {
         "amount": 0.001,
         "reason": "BUDGET_GUARD"
       }
     },
     {
-      "id": "38fbea18-652d-46aa-965c-0ef515419ab2",
-      "runId": "2d0f8fe1-856b-4548-a425-3df2f6901e4b",
+      "id": "7c91d8f8-452a-433f-859d-a770c6eb6089",
+      "runId": "43bc6831-65f4-47cc-8299-8170a31cbd60",
       "sequence": 5,
       "type": "PAYMENT_SETTLED",
-      "at": "2026-09-30T20:17:23.262Z",
+      "at": "2026-09-30T20:47:25.458Z",
       "data": {
         "resolverId": "policy-verifier",
         "amount": 0.001,
         "spent": 0.001,
-        "transaction": "4YN5zZC8uNNJsFDChmWcxeA73VSBFVeFoUTLWFrV7RLHRfcR4wErb8Laag9H4QbKz2zz3McvNVBSvgkR7kXLeWBq",
+        "transaction": "2bAA8KE8tzfsqMBJkQXZ588J1zNeLLBQAYEk2jiFFHj5fCdtghazJH8wLMSbLD6tiZiDLoMa7MxETyuqjLQtS524",
         "network": "sandbox"
       }
     },
     {
-      "id": "4459cb24-2b74-4aa7-9938-d1bc3a47dc49",
-      "runId": "2d0f8fe1-856b-4548-a425-3df2f6901e4b",
+      "id": "77b98131-969b-48b9-9ffd-700f93484b37",
+      "runId": "43bc6831-65f4-47cc-8299-8170a31cbd60",
       "sequence": 6,
       "type": "RESULT_RECEIVED",
-      "at": "2026-09-30T20:17:23.263Z",
+      "at": "2026-09-30T20:47:25.458Z",
       "data": {
         "resolverId": "policy-verifier"
       }
     },
     {
-      "id": "e135358b-b594-4907-bfb8-f62cf75f4b73",
-      "runId": "2d0f8fe1-856b-4548-a425-3df2f6901e4b",
+      "id": "49d64648-9dc9-4150-b50b-a4e80f9149aa",
+      "runId": "43bc6831-65f4-47cc-8299-8170a31cbd60",
       "sequence": 7,
       "type": "VALIDATION_PASSED",
-      "at": "2026-09-30T20:17:23.263Z",
+      "at": "2026-09-30T20:47:25.459Z",
       "data": {
         "resolverId": "policy-verifier",
         "checks": {
@@ -110,15 +110,15 @@
       }
     },
     {
-      "id": "69624f20-f53e-4d24-950c-5bd448512584",
-      "runId": "2d0f8fe1-856b-4548-a425-3df2f6901e4b",
+      "id": "c75ae1d7-8074-497c-a7e8-000f92454cd7",
+      "runId": "43bc6831-65f4-47cc-8299-8170a31cbd60",
       "sequence": 8,
       "type": "RECEIPT_ISSUED",
-      "at": "2026-09-30T20:17:23.264Z",
+      "at": "2026-09-30T20:47:25.460Z",
       "data": {
         "receipt": {
-          "id": "76a381c5-50ec-4411-8d73-2845b4a25020",
-          "contractId": "3681b357-45b3-49bb-9129-b6b800b2dd42",
+          "id": "e1409cef-7464-4710-ba5d-eb207fd4e27f",
+          "contractId": "2d347681-eb6a-4288-b6da-03c939d2ce53",
           "resolverId": "policy-verifier",
           "cost": 0.001,
           "paymentStatus": "SETTLED",
@@ -129,21 +129,21 @@
             "conversation_can_continue": true,
             "message": "I can do $900. If that works, I can send a public pickup location."
           },
-          "createdAt": "2026-09-30T20:17:23.263Z",
-          "transaction": "4YN5zZC8uNNJsFDChmWcxeA73VSBFVeFoUTLWFrV7RLHRfcR4wErb8Laag9H4QbKz2zz3McvNVBSvgkR7kXLeWBq",
+          "createdAt": "2026-09-30T20:47:25.459Z",
+          "transaction": "2bAA8KE8tzfsqMBJkQXZ588J1zNeLLBQAYEk2jiFFHj5fCdtghazJH8wLMSbLD6tiZiDLoMa7MxETyuqjLQtS524",
           "network": "sandbox"
         }
       }
     },
     {
-      "id": "879a49c0-22b0-47ae-b843-6c86cb6cbd49",
-      "runId": "2d0f8fe1-856b-4548-a425-3df2f6901e4b",
+      "id": "5dc33fdf-2caa-460d-8d30-3bf8435d56ef",
+      "runId": "43bc6831-65f4-47cc-8299-8170a31cbd60",
       "sequence": 9,
       "type": "AGENT_RESUMED",
-      "at": "2026-09-30T20:17:23.267Z",
+      "at": "2026-09-30T20:47:25.465Z",
       "data": {
         "message": "I can do $900. If that works, I can send a public pickup location.",
-        "receiptId": "76a381c5-50ec-4411-8d73-2845b4a25020",
+        "receiptId": "e1409cef-7464-4710-ba5d-eb207fd4e27f",
         "runtime": "OpenAI Agents JS",
         "delivery": "Local negotiation transcript; no external message sent"
       }
