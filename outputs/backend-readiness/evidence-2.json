@@ -1,12 +1,12 @@
 [
   {
-    "id": "08eefa00-2c8f-4b37-80de-89e459ff3a61",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "79f626e2-e2bc-4915-b01a-b6cdefa70938",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 0,
     "type": "EXCEPTION_CREATED",
-    "at": "2026-09-30T19:29:30.647Z",
+    "at": "2026-09-30T20:17:02.024Z",
     "data": {
-      "exceptionId": "8f51a071-6714-4f20-8370-b0fec82174e0",
+      "exceptionId": "c358c061-af86-40a2-b4a4-155f82b9267b",
       "type": "EVIDENCE_GAP",
       "task": "Review image evidence",
       "mode": "SANDBOX_FIXTURE_ESCALATION",
@@ -15,13 +15,13 @@
     }
   },
   {
-    "id": "0a35c730-6f56-4a24-ba09-5442ed8334b1",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "613f0d50-58af-4e93-aec3-cbf092915088",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 1,
     "type": "CONTRACT_CREATED",
-    "at": "2026-09-30T19:29:30.647Z",
+    "at": "2026-09-30T20:17:02.024Z",
     "data": {
-      "contractId": "3473b178-81b0-442b-b95a-6203185c2c43",
+      "contractId": "d1d2b1e9-1553-4471-9e85-91cdef63dc46",
       "budget": {
         "maxTotal": 0.05,
         "maxAttempt": 0.05
@@ -35,11 +35,11 @@
     }
   },
   {
-    "id": "b6214704-9d8b-4c0b-8e10-bd47f4d53690",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "e03cfc02-6aff-4214-bf9f-af7c5583b3d7",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 2,
     "type": "RESOLVER_SELECTED",
-    "at": "2026-09-30T19:29:30.647Z",
+    "at": "2026-09-30T20:17:02.024Z",
     "data": {
       "resolverId": "fixture-text",
       "name": "Text evidence fixture",
@@ -48,56 +48,56 @@
     }
   },
   {
-    "id": "361e0e5d-1fb2-45c0-b372-c27a2fda1b2a",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "b3cb210e-b74a-4c2f-857e-ddc7baca52a6",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 3,
     "type": "PAYMENT_REQUIRED",
-    "at": "2026-09-30T19:29:30.650Z",
+    "at": "2026-09-30T20:17:02.026Z",
     "data": {
       "amount": 0.001
     }
   },
   {
-    "id": "e200995a-1982-434f-b2a1-ff81eadad259",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "46665139-234c-474a-add3-d88e95316650",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 4,
     "type": "PAYMENT_AUTHORIZED",
-    "at": "2026-09-30T19:29:30.650Z",
+    "at": "2026-09-30T20:17:02.026Z",
     "data": {
       "amount": 0.001,
       "reason": "BUDGET_GUARD"
     }
   },
   {
-    "id": "db498d14-1b91-4f8e-aa1e-dd7b8a80a91e",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "a15f5658-0300-4ab7-b457-c0211015d2af",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 5,
     "type": "PAYMENT_SETTLED",
-    "at": "2026-09-30T19:29:31.960Z",
+    "at": "2026-09-30T20:17:03.239Z",
     "data": {
       "resolverId": "fixture-text",
       "amount": 0.001,
       "spent": 0.001,
-      "transaction": "581aW1A5m88TZXrvAWCsR48kAacAKph8YqPZCcs4pULGMDwX1J479FMG7XNHjoYCamP6u9VodvfceZwe2LUqsUnP",
+      "transaction": "3Vf5UK81kmxLiL6hwnaZ1UDCUyzUbdUTzZu7zwZz4So6j8kErzTUcBLqpGamdAstpgJYv2hkHtPfZXFiGvhvNvAq",
       "network": "sandbox"
     }
   },
   {
-    "id": "0528f465-9abb-4ceb-90c9-df0b43ebd4c9",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "b3c85d9c-fe47-440c-9846-97454d6344b7",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 6,
     "type": "RESULT_RECEIVED",
-    "at": "2026-09-30T19:29:31.960Z",
+    "at": "2026-09-30T20:17:03.239Z",
     "data": {
       "resolverId": "fixture-text"
     }
   },
   {
-    "id": "edc67340-b009-4ffb-b181-e272d3a3944d",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "a1605ee2-d2f0-45e7-8fe3-a3afaf333779",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 7,
     "type": "VALIDATION_FAILED",
-    "at": "2026-09-30T19:29:31.960Z",
+    "at": "2026-09-30T20:17:03.239Z",
     "data": {
       "resolverId": "fixture-text",
       "checks": {
@@ -108,21 +108,21 @@
     }
   },
   {
-    "id": "4d727334-8626-4cab-ac44-9f56e5e1b41f",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "b5c12ade-7152-46fd-b57f-729ff0ca6fb8",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 8,
     "type": "ESCALATING",
-    "at": "2026-09-30T19:29:31.960Z",
+    "at": "2026-09-30T20:17:03.239Z",
     "data": {
       "from": "fixture-text"
     }
   },
   {
-    "id": "6c8c7bdd-c032-454d-85ef-816254205514",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "84bcd3a8-af58-4810-8737-8575cabf7f48",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 9,
     "type": "RESOLVER_SELECTED",
-    "at": "2026-09-30T19:29:31.960Z",
+    "at": "2026-09-30T20:17:03.239Z",
     "data": {
       "resolverId": "fixture-rich",
       "name": "Rich evidence fixture",
@@ -131,56 +131,56 @@
     }
   },
   {
-    "id": "e8f3a4fc-e59b-42fd-8dff-f7591603a82c",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "e73444b3-6d48-4c78-b9f3-ad1c200560d0",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 10,
     "type": "PAYMENT_REQUIRED",
-    "at": "2026-09-30T19:29:31.962Z",
+    "at": "2026-09-30T20:17:03.241Z",
     "data": {
       "amount": 0.0015
     }
   },
   {
-    "id": "cfa8b03f-c162-44c0-8fc9-a043868dca6d",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "eddf2ecd-d866-46b9-be79-86bb213b8a89",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 11,
     "type": "PAYMENT_AUTHORIZED",
-    "at": "2026-09-30T19:29:31.962Z",
+    "at": "2026-09-30T20:17:03.241Z",
     "data": {
       "amount": 0.0015,
       "reason": "BUDGET_GUARD"
     }
   },
   {
-    "id": "36bb7a47-59f0-4964-803e-4153ab1a125a",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "d79408c8-7691-41b4-91c2-25a2296b74c8",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 12,
     "type": "PAYMENT_SETTLED",
-    "at": "2026-09-30T19:29:33.195Z",
+    "at": "2026-09-30T20:17:04.501Z",
     "data": {
       "resolverId": "fixture-rich",
       "amount": 0.0015,
       "spent": 0.0025,
-      "transaction": "2WyBjEdmT9vtoajUmRcVEdmYqJcb7SarUkmeeP9f2t3iPo5KMawD7HBTFJ97KqMBzSHJcH4BsHc7EpJY1abB4w92",
+      "transaction": "35evNg4auchreiGdvLdCNzjyRkv364n2onyu4B5UdUFvQRhZjj3rmzCtf2GJyEurvSTRqU1PobVpCTdsdpnBkaAa",
       "network": "sandbox"
     }
   },
   {
-    "id": "8bcea3dc-8eab-448f-9046-a39f1db8071b",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "7e77b6f4-344f-4334-9752-fc318b82fa42",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 13,
     "type": "RESULT_RECEIVED",
-    "at": "2026-09-30T19:29:33.195Z",
+    "at": "2026-09-30T20:17:04.501Z",
     "data": {
       "resolverId": "fixture-rich"
     }
   },
   {
-    "id": "60707d56-03d7-4f27-8486-c80214e4d9c1",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "f23e03a4-6534-427e-afdb-d6121581889d",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 14,
     "type": "VALIDATION_PASSED",
-    "at": "2026-09-30T19:29:33.196Z",
+    "at": "2026-09-30T20:17:04.501Z",
     "data": {
       "resolverId": "fixture-rich",
       "checks": {
@@ -191,15 +191,15 @@
     }
   },
   {
-    "id": "87f617bb-719a-42b6-afff-3e9bdcfeabc4",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "493fe941-74bc-4985-9bb8-d5d54f9b1565",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 15,
     "type": "RECEIPT_ISSUED",
-    "at": "2026-09-30T19:29:33.196Z",
+    "at": "2026-09-30T20:17:04.502Z",
     "data": {
       "receipt": {
-        "id": "1b9d5cbe-7bdc-4549-b567-d5d77a0f96be",
-        "contractId": "3473b178-81b0-442b-b95a-6203185c2c43",
+        "id": "9c38ae8f-b8bf-44f2-8fc2-92d90db96664",
+        "contractId": "d1d2b1e9-1553-4471-9e85-91cdef63dc46",
         "resolverId": "fixture-rich",
         "cost": 0.0015,
         "paymentStatus": "SETTLED",
@@ -216,21 +216,21 @@
             "Digital camera"
           ]
         },
-        "createdAt": "2026-09-30T19:29:33.196Z",
-        "transaction": "2WyBjEdmT9vtoajUmRcVEdmYqJcb7SarUkmeeP9f2t3iPo5KMawD7HBTFJ97KqMBzSHJcH4BsHc7EpJY1abB4w92",
+        "createdAt": "2026-09-30T20:17:04.501Z",
+        "transaction": "35evNg4auchreiGdvLdCNzjyRkv364n2onyu4B5UdUFvQRhZjj3rmzCtf2GJyEurvSTRqU1PobVpCTdsdpnBkaAa",
         "network": "sandbox"
       }
     }
   },
   {
-    "id": "6a6d9d52-8883-4027-82ad-9cd259ffabcd",
-    "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+    "id": "f37cae3c-ae0c-4514-9a6f-d704e7380b53",
+    "runId": "33d75054-318f-456a-886e-125c41a83192",
     "sequence": 16,
     "type": "AGENT_RESUMED",
-    "at": "2026-09-30T19:29:33.197Z",
+    "at": "2026-09-30T20:17:04.503Z",
     "data": {
       "message": "Required image evidence is present. Continue the local review; authenticity is not established.",
-      "receiptId": "1b9d5cbe-7bdc-4549-b567-d5d77a0f96be",
+      "receiptId": "9c38ae8f-b8bf-44f2-8fc2-92d90db96664",
       "runtime": "OpenAI Agents JS",
       "delivery": "Local negotiation transcript; no external message sent"
     }

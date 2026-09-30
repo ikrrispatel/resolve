@@ -7,13 +7,13 @@
       "kind": "policy",
       "run": 1,
       "status": "PASS",
-      "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+      "runId": "434fe904-9c7d-40b1-b284-5e6bb8372f21",
       "sandboxSettlements": [
         {
           "resolverId": "policy-verifier",
           "amount": 0.001,
           "spent": 0.001,
-          "transaction": "6TiDxDMJ49Wpw5QhVMocRqSMaqki177SEhFxMKcR4Jqm9uV12QCfS3DaNUEFCPaVLy5G15Q3nLu3hB4TF5F9UYL",
+          "transaction": "5sYWDUdDrRbhJH8D8t7X8Behdsb4kvFVnjg48XPEqUt1ZdH2ku78bLqJhy4QuVUHQEcTK4YEdLw2ZtrA3pvPQULN",
           "network": "sandbox"
         }
       ],
@@ -28,13 +28,13 @@
       "kind": "policy",
       "run": 2,
       "status": "PASS",
-      "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+      "runId": "3746fb3c-618c-4c39-9990-7333d9b127d1",
       "sandboxSettlements": [
         {
           "resolverId": "policy-verifier",
           "amount": 0.001,
           "spent": 0.001,
-          "transaction": "5otURyEVxrLM8LbFvEnrcXG8QryqbnnpxNvCP3554izVM6XMN48B4TGLj8kyRC5T9QvYy6oHYA6pcWfQ4USJmQ5K",
+          "transaction": "31a46AtDXC38bZhgr7Z1FmW3gVjJFN6F6VLdxrLLcb2TELxMVg64DrYiKU3UgzXxcu9Rtr7mAvjmEsF2kMdRyaAL",
           "network": "sandbox"
         }
       ],
@@ -49,13 +49,13 @@
       "kind": "policy",
       "run": 3,
       "status": "PASS",
-      "runId": "3ed70ec5-a83a-4c1f-ac7f-e10aeb2b9cee",
+      "runId": "ff251354-c57d-4369-965a-761f1d94eaef",
       "sandboxSettlements": [
         {
           "resolverId": "policy-verifier",
           "amount": 0.001,
           "spent": 0.001,
-          "transaction": "2u6q7mWGdAREQE8U7gREBU1e1eYoM9BWRRKFzy1eHVJiCwr4xvv85mi921UM5icek4zCn55HinXas7SFBZEgEXYj",
+          "transaction": "42hgyhFU2EqYVi2S5ZrbA7ei5cKAhJaE26Vrqz9LDGBa2gNR4H1uBLQqdaVcrvouJUjFHczbak9a1hdCGdaZLJ7m",
           "network": "sandbox"
         }
       ],
@@ -70,20 +70,20 @@
       "kind": "evidence",
       "run": 1,
       "status": "PASS",
-      "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+      "runId": "76a4e6b4-b685-475c-af26-b54da3a087db",
       "sandboxSettlements": [
         {
           "resolverId": "fixture-text",
           "amount": 0.001,
           "spent": 0.001,
-          "transaction": "3DUkoS7nBsekbyMapvvKn9HjV9eghaD8iiQRffMDsHRDMca7JCFjx1tCcXXwbeRg4jBDbUhNF2bgJv6PsXMQV6xB",
+          "transaction": "gaFy7yHK3RXxiFi371z3QYoma9WMHcVwH1qaoH5nhvwCUm59NMmbBPtjDz1oyNRJPQUsrksZ6Gv2tfCDqPiYhQE",
           "network": "sandbox"
         },
         {
           "resolverId": "fixture-rich",
           "amount": 0.0015,
           "spent": 0.0025,
-          "transaction": "5HQkms7mfxCUQcYeF69DCZFqoRChUQKaevuKX5Rx9wdys8tVEtCqUdfnaXvLaPtDYpEBuDQbYyN38QjPCaFANGjJ",
+          "transaction": "5fLrub2Kz1kQaQ1y1kq7Heb7JRA6sRBo94Esi5YxY1wpLUNJ147yDUah4e8ZD1wAZoa2aB5h9VkfYWoPrnoEZBs1",
           "network": "sandbox"
         }
       ],
@@ -98,20 +98,20 @@
       "kind": "evidence",
       "run": 2,
       "status": "PASS",
-      "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+      "runId": "33d75054-318f-456a-886e-125c41a83192",
       "sandboxSettlements": [
         {
           "resolverId": "fixture-text",
           "amount": 0.001,
           "spent": 0.001,
-          "transaction": "581aW1A5m88TZXrvAWCsR48kAacAKph8YqPZCcs4pULGMDwX1J479FMG7XNHjoYCamP6u9VodvfceZwe2LUqsUnP",
+          "transaction": "3Vf5UK81kmxLiL6hwnaZ1UDCUyzUbdUTzZu7zwZz4So6j8kErzTUcBLqpGamdAstpgJYv2hkHtPfZXFiGvhvNvAq",
           "network": "sandbox"
         },
         {
           "resolverId": "fixture-rich",
           "amount": 0.0015,
           "spent": 0.0025,
-          "transaction": "2WyBjEdmT9vtoajUmRcVEdmYqJcb7SarUkmeeP9f2t3iPo5KMawD7HBTFJ97KqMBzSHJcH4BsHc7EpJY1abB4w92",
+          "transaction": "35evNg4auchreiGdvLdCNzjyRkv364n2onyu4B5UdUFvQRhZjj3rmzCtf2GJyEurvSTRqU1PobVpCTdsdpnBkaAa",
           "network": "sandbox"
         }
       ],
@@ -126,20 +126,20 @@
       "kind": "evidence",
       "run": 3,
       "status": "PASS",
-      "runId": "076a84d7-22c2-48a2-b21c-79ff54aa3f24",
+      "runId": "8592295b-359b-4c7b-bab0-0b9372af76b7",
       "sandboxSettlements": [
         {
           "resolverId": "fixture-text",
           "amount": 0.001,
           "spent": 0.001,
-          "transaction": "29rcfva7iBtteK9fX1QCnq4pgoj4X3iZAqRjDyjCGBCWuRJGANyivJY7ZFFdh31XcC74CqRuxPMmeodcHgWwi7RX",
+          "transaction": "4r8hvgLJoJhewvJL68v43xa6JjfCy46BMz3EjmVSzVQCZcZK9AHjX3Deiw3CKvQ2FWbxAybZ9izMLKLiDwJsR34N",
           "network": "sandbox"
         },
         {
           "resolverId": "fixture-rich",
           "amount": 0.0015,
           "spent": 0.0025,
-          "transaction": "5DtBxkvNU7SZDqgrnS8TLBRAUsRyJwRxtVv4JmBAs5Y2rvZvfLRkSG1AfJ39rxFS3W1YgbyTKE1o3GF3D9bjuvxQ",
+          "transaction": "PjkMX7WPU5hoVGh9W5AfzFN4vW92nu1tVoxvbxq51dY3xy6PD8veAg9u6oTZfuxU7hJRNJBhGzYpNJ7Lw5YURXy",
           "network": "sandbox"
         }
       ],
@@ -154,7 +154,7 @@
       "kind": "abstain",
       "run": 1,
       "status": "PASS",
-      "runId": "e65c4557-2eb7-4c49-98f6-927929b0dda6",
+      "runId": "27e8b24c-33f7-4ac7-a29f-c5cf30d62e20",
       "sandboxSettlements": [],
       "receiptCount": 0,
       "resumeCount": 0,
@@ -167,7 +167,7 @@
       "kind": "abstain",
       "run": 2,
       "status": "PASS",
-      "runId": "4923a496-a245-47dc-8638-35fbae54521b",
+      "runId": "10b7a9e6-546e-4fbc-a6a0-05f27397fd55",
       "sandboxSettlements": [],
       "receiptCount": 0,
       "resumeCount": 0,
@@ -180,7 +180,7 @@
       "kind": "abstain",
       "run": 3,
       "status": "PASS",
-      "runId": "a60cb36c-78e2-45a3-a4cf-5878d41594d1",
+      "runId": "64b7008a-88f4-4969-aa9b-6579ccaf02b0",
       "sandboxSettlements": [],
       "receiptCount": 0,
       "resumeCount": 0,
@@ -193,13 +193,13 @@
       "kind": "receipt-gate",
       "run": 1,
       "status": "PASS",
-      "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+      "runId": "67922425-a69e-4be2-a942-d99b2a73b7e1",
       "sandboxSettlements": [
         {
           "resolverId": "fixture-text",
           "amount": 0.001,
           "spent": 0.001,
-          "transaction": "3FXdjHMEEGVjeFXe6K8mKniNK8sLvuBgzvJVpDDdbrEC6G16ztHnLwzxMCQtSZ76hYcSzDhHkP96bMJQaopb3xeT",
+          "transaction": "4hcQ4ucZgzDstdn5ugdVAgKWfUQUQ5EaggSRienP3CKQsiwpxcCH6vwmgcvcjRVXtz97j1GYFC4ZMCta6DGGmugm",
           "network": "sandbox"
         }
       ],
@@ -210,30 +210,5 @@
       "providerPayload": "DETERMINISTIC",
       "agent": "LIVE_OPENAI"
     }
-  ],
-  "regression": {
-    "testsPassed": 33,
-    "typecheck": "PASS",
-    "productionBuild": "PASS",
-    "smoke": {
-      "initialHttp": 402,
-      "paidHttp": 200,
-      "status": "SETTLED",
-      "network": "sandbox",
-      "transaction": "2HXtuKLvP5HKiZX6oEWo196deSY6WYSXgWJdDRDSWJpS69F6vnZaZdLymCJHZTJ4ih3n2Bw8fc684DyJ5EEVicCR"
-    }
-  },
-  "failureHandling": {
-    "mode": "TEST_ONLY_INJECTED_IO_REAL_LADDER_AND_SDK",
-    "cases": [
-      "malformed",
-      "timeout",
-      "payment-failure",
-      "invalid-result"
-    ],
-    "allFailClosed": true
-  },
-  "issuesFound": [],
-  "productChanges": [],
-  "backendFrozen": true
+  ]
 }

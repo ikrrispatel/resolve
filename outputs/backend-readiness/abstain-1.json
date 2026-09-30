@@ -1,12 +1,12 @@
 [
   {
-    "id": "bc2ff140-b13f-4b3c-9570-0f25704d8f10",
-    "runId": "e65c4557-2eb7-4c49-98f6-927929b0dda6",
+    "id": "92c437c8-272f-4488-bb7e-633cd3560ba2",
+    "runId": "27e8b24c-33f7-4ac7-a29f-c5cf30d62e20",
     "sequence": 0,
     "type": "EXCEPTION_CREATED",
-    "at": "2026-09-30T19:29:40.079Z",
+    "at": "2026-09-30T20:17:09.725Z",
     "data": {
-      "exceptionId": "4fbcf197-b406-4e29-839e-eefea6fb12a6",
+      "exceptionId": "1cca0229-b19f-41f6-902f-1fec748ac2d1",
       "type": "POLICY_CONFLICT",
       "task": "Sell my MacBook",
       "mode": "SANDBOX_POLICY",
@@ -15,13 +15,13 @@
     }
   },
   {
-    "id": "c3fe70de-0d5c-4a58-a016-032a3f4d3665",
-    "runId": "e65c4557-2eb7-4c49-98f6-927929b0dda6",
+    "id": "4eb44fd3-405d-4255-b534-9d6b1bd45467",
+    "runId": "27e8b24c-33f7-4ac7-a29f-c5cf30d62e20",
     "sequence": 1,
     "type": "CONTRACT_CREATED",
-    "at": "2026-09-30T19:29:40.079Z",
+    "at": "2026-09-30T20:17:09.725Z",
     "data": {
-      "contractId": "47f4cb05-0348-4266-ba64-3c19c0793692",
+      "contractId": "c9d06cc7-3800-42f1-8bf9-700922762b3b",
       "budget": {
         "maxTotal": 0.0001,
         "maxAttempt": 0.0001
@@ -35,11 +35,11 @@
     }
   },
   {
-    "id": "b52117b4-bcc9-4c6d-8e7c-7a544c47b572",
-    "runId": "e65c4557-2eb7-4c49-98f6-927929b0dda6",
+    "id": "1bd60877-0ce1-4477-b7c7-8980eb8b066a",
+    "runId": "27e8b24c-33f7-4ac7-a29f-c5cf30d62e20",
     "sequence": 2,
     "type": "ABSTAINED",
-    "at": "2026-09-30T19:29:40.080Z",
+    "at": "2026-09-30T20:17:09.725Z",
     "data": {
       "reason": "NO_ELIGIBLE_RESOLVER",
       "spent": 0

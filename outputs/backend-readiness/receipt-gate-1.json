@@ -1,12 +1,12 @@
 [
   {
-    "id": "6af143cf-11a6-4d8d-b2e4-7115cae5d131",
-    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "id": "8d8c64c1-2950-4b84-9207-b9ccdf85abf7",
+    "runId": "67922425-a69e-4be2-a942-d99b2a73b7e1",
     "sequence": 0,
     "type": "EXCEPTION_CREATED",
-    "at": "2026-09-30T19:29:44.367Z",
+    "at": "2026-09-30T20:17:16.265Z",
     "data": {
-      "exceptionId": "9bb6fc7f-af2a-4cf6-8847-ed00a577b956",
+      "exceptionId": "95911b0b-7c61-4abc-8aaa-efb9361b0ee1",
       "type": "EVIDENCE_GAP",
       "task": "Review image evidence",
       "mode": "SANDBOX_FIXTURE_ESCALATION",
@@ -15,13 +15,13 @@
     }
   },
   {
-    "id": "4cb2ec35-743e-4339-bfb9-8454e7abc50c",
-    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "id": "f21bed73-bd41-4253-866a-da4c526760d3",
+    "runId": "67922425-a69e-4be2-a942-d99b2a73b7e1",
     "sequence": 1,
     "type": "CONTRACT_CREATED",
-    "at": "2026-09-30T19:29:44.367Z",
+    "at": "2026-09-30T20:17:16.265Z",
     "data": {
-      "contractId": "89393065-d8f5-40de-8143-cdacbfd3cf84",
+      "contractId": "36f1bc24-5e54-4cb0-8129-e49f9ac19b3d",
       "budget": {
         "maxTotal": 0.001,
         "maxAttempt": 0.001
@@ -35,11 +35,11 @@
     }
   },
   {
-    "id": "96686152-25ce-435d-9e8f-e85a80c17d09",
-    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "id": "fe912297-ae61-4078-a355-ef5e78d874f6",
+    "runId": "67922425-a69e-4be2-a942-d99b2a73b7e1",
     "sequence": 2,
     "type": "RESOLVER_SELECTED",
-    "at": "2026-09-30T19:29:44.367Z",
+    "at": "2026-09-30T20:17:16.265Z",
     "data": {
       "resolverId": "fixture-text",
       "name": "Text evidence fixture",
@@ -48,56 +48,56 @@
     }
   },
   {
-    "id": "15de2ed7-893b-4397-97b5-49559861e847",
-    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "id": "698ec3b4-0f83-4e4c-b11a-2b3a7352ca1b",
+    "runId": "67922425-a69e-4be2-a942-d99b2a73b7e1",
     "sequence": 3,
     "type": "PAYMENT_REQUIRED",
-    "at": "2026-09-30T19:29:44.369Z",
+    "at": "2026-09-30T20:17:16.268Z",
     "data": {
       "amount": 0.001
     }
   },
   {
-    "id": "49b7d58c-b4be-40db-b7f1-26efb4e3aef4",
-    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "id": "e9c137e8-ecec-4b09-9ac6-5abecf56eca8",
+    "runId": "67922425-a69e-4be2-a942-d99b2a73b7e1",
     "sequence": 4,
     "type": "PAYMENT_AUTHORIZED",
-    "at": "2026-09-30T19:29:44.369Z",
+    "at": "2026-09-30T20:17:16.268Z",
     "data": {
       "amount": 0.001,
       "reason": "BUDGET_GUARD"
     }
   },
   {
-    "id": "5025e486-83cf-46b9-bcff-d6a8de6269e6",
-    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "id": "667a5271-b733-43d4-8184-b309ad600f08",
+    "runId": "67922425-a69e-4be2-a942-d99b2a73b7e1",
     "sequence": 5,
     "type": "PAYMENT_SETTLED",
-    "at": "2026-09-30T19:29:45.824Z",
+    "at": "2026-09-30T20:17:17.713Z",
     "data": {
       "resolverId": "fixture-text",
       "amount": 0.001,
       "spent": 0.001,
-      "transaction": "3FXdjHMEEGVjeFXe6K8mKniNK8sLvuBgzvJVpDDdbrEC6G16ztHnLwzxMCQtSZ76hYcSzDhHkP96bMJQaopb3xeT",
+      "transaction": "4hcQ4ucZgzDstdn5ugdVAgKWfUQUQ5EaggSRienP3CKQsiwpxcCH6vwmgcvcjRVXtz97j1GYFC4ZMCta6DGGmugm",
       "network": "sandbox"
     }
   },
   {
-    "id": "3af05d93-0368-40b4-893e-3be81d3b5635",
-    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "id": "58b09404-54b9-48f1-9f0f-5e847f21e3eb",
+    "runId": "67922425-a69e-4be2-a942-d99b2a73b7e1",
     "sequence": 6,
     "type": "RESULT_RECEIVED",
-    "at": "2026-09-30T19:29:45.824Z",
+    "at": "2026-09-30T20:17:17.713Z",
     "data": {
       "resolverId": "fixture-text"
     }
   },
   {
-    "id": "7e06ecbf-570d-47a8-a69e-e80bf7ab5786",
-    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "id": "4789c9f3-07a2-4882-982b-cb01af929f2c",
+    "runId": "67922425-a69e-4be2-a942-d99b2a73b7e1",
     "sequence": 7,
     "type": "VALIDATION_FAILED",
-    "at": "2026-09-30T19:29:45.824Z",
+    "at": "2026-09-30T20:17:17.713Z",
     "data": {
       "resolverId": "fixture-text",
       "checks": {
@@ -108,11 +108,11 @@
     }
   },
   {
-    "id": "637b1561-fd2e-4ff8-a7af-1d2234c31855",
-    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "id": "0ae0458b-9011-4d06-bb7e-850fb4c70efb",
+    "runId": "67922425-a69e-4be2-a942-d99b2a73b7e1",
     "sequence": 8,
     "type": "ABSTAINED",
-    "at": "2026-09-30T19:29:45.824Z",
+    "at": "2026-09-30T20:17:17.713Z",
     "data": {
       "reason": "NO_VERIFIED_RESOLUTION",
       "spent": 0.001

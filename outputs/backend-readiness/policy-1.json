@@ -1,12 +1,12 @@
 [
   {
-    "id": "2054aac2-fa58-4b47-8c73-9eb1e5914c3d",
-    "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+    "id": "6a35c3c3-525f-43b0-a68e-6530c398b58a",
+    "runId": "434fe904-9c7d-40b1-b284-5e6bb8372f21",
     "sequence": 0,
     "type": "EXCEPTION_CREATED",
-    "at": "2026-09-30T19:29:16.599Z",
+    "at": "2026-09-30T20:16:46.904Z",
     "data": {
-      "exceptionId": "93e536b9-dab6-4378-b6af-356a5167e698",
+      "exceptionId": "5a21e57c-6af2-4908-b0b5-dc33c2e86d40",
       "type": "POLICY_CONFLICT",
       "task": "Sell my MacBook",
       "mode": "SANDBOX_POLICY",
@@ -15,13 +15,13 @@
     }
   },
   {
-    "id": "dee481a2-8db2-4ccf-8200-de47e4a1d1f4",
-    "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+    "id": "52e80fe4-3ea4-4a09-9f16-d4aff4e0c4aa",
+    "runId": "434fe904-9c7d-40b1-b284-5e6bb8372f21",
     "sequence": 1,
     "type": "CONTRACT_CREATED",
-    "at": "2026-09-30T19:29:16.601Z",
+    "at": "2026-09-30T20:16:46.907Z",
     "data": {
-      "contractId": "e93034b1-afdf-4971-a86f-462e63819157",
+      "contractId": "9b227a3d-8feb-44c0-a434-228e9d46aafc",
       "budget": {
         "maxTotal": 0.05,
         "maxAttempt": 0.05
@@ -35,11 +35,11 @@
     }
   },
   {
-    "id": "956bc492-0ff7-4ed5-843c-ff106251903b",
-    "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+    "id": "59bf8675-a33d-4260-b82f-53d077db8102",
+    "runId": "434fe904-9c7d-40b1-b284-5e6bb8372f21",
     "sequence": 2,
     "type": "RESOLVER_SELECTED",
-    "at": "2026-09-30T19:29:16.601Z",
+    "at": "2026-09-30T20:16:46.907Z",
     "data": {
       "resolverId": "policy-verifier",
       "name": "Policy Verifier",
@@ -48,56 +48,56 @@
     }
   },
   {
-    "id": "b52ca6b6-ca62-43c8-a957-a086df1608e8",
-    "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+    "id": "f177ce2c-9839-44f3-93aa-a9a97128eb58",
+    "runId": "434fe904-9c7d-40b1-b284-5e6bb8372f21",
     "sequence": 3,
     "type": "PAYMENT_REQUIRED",
-    "at": "2026-09-30T19:29:16.607Z",
+    "at": "2026-09-30T20:16:46.915Z",
     "data": {
       "amount": 0.001
     }
   },
   {
-    "id": "c8fb0528-01c5-4847-8cc9-84dbf7d89227",
-    "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+    "id": "9e6900c9-5fae-4116-a5bf-12d9afcfa573",
+    "runId": "434fe904-9c7d-40b1-b284-5e6bb8372f21",
     "sequence": 4,
     "type": "PAYMENT_AUTHORIZED",
-    "at": "2026-09-30T19:29:16.607Z",
+    "at": "2026-09-30T20:16:46.915Z",
     "data": {
       "amount": 0.001,
       "reason": "BUDGET_GUARD"
     }
   },
   {
-    "id": "8292ae46-fa91-4070-b124-ed37d6b2c563",
-    "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+    "id": "1dddd5b8-488b-4ce4-9701-93c1c383c60b",
+    "runId": "434fe904-9c7d-40b1-b284-5e6bb8372f21",
     "sequence": 5,
     "type": "PAYMENT_SETTLED",
-    "at": "2026-09-30T19:29:17.815Z",
+    "at": "2026-09-30T20:16:48.334Z",
     "data": {
       "resolverId": "policy-verifier",
       "amount": 0.001,
       "spent": 0.001,
-      "transaction": "6TiDxDMJ49Wpw5QhVMocRqSMaqki177SEhFxMKcR4Jqm9uV12QCfS3DaNUEFCPaVLy5G15Q3nLu3hB4TF5F9UYL",
+      "transaction": "5sYWDUdDrRbhJH8D8t7X8Behdsb4kvFVnjg48XPEqUt1ZdH2ku78bLqJhy4QuVUHQEcTK4YEdLw2ZtrA3pvPQULN",
       "network": "sandbox"
     }
   },
   {
-    "id": "2ff095f0-8d39-4565-bfd7-e8f95735abeb",
-    "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+    "id": "61ef47eb-b3b0-4630-bf91-e8301bc6a9e3",
+    "runId": "434fe904-9c7d-40b1-b284-5e6bb8372f21",
     "sequence": 6,
     "type": "RESULT_RECEIVED",
-    "at": "2026-09-30T19:29:17.815Z",
+    "at": "2026-09-30T20:16:48.334Z",
     "data": {
       "resolverId": "policy-verifier"
     }
   },
   {
-    "id": "9fcf2ffb-c753-4739-a1af-d47296e71a2a",
-    "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+    "id": "fb5e55c7-c245-4dd1-a364-b5b338051f69",
+    "runId": "434fe904-9c7d-40b1-b284-5e6bb8372f21",
     "sequence": 7,
     "type": "VALIDATION_PASSED",
-    "at": "2026-09-30T19:29:17.816Z",
+    "at": "2026-09-30T20:16:48.335Z",
     "data": {
       "resolverId": "policy-verifier",
       "checks": {
@@ -108,15 +108,15 @@
     }
   },
   {
-    "id": "bab1a349-626b-4874-be76-747951d2350a",
-    "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+    "id": "8d80e3e0-549e-4893-94f0-138f5bcfc1d2",
+    "runId": "434fe904-9c7d-40b1-b284-5e6bb8372f21",
     "sequence": 8,
     "type": "RECEIPT_ISSUED",
-    "at": "2026-09-30T19:29:17.817Z",
+    "at": "2026-09-30T20:16:48.336Z",
     "data": {
       "receipt": {
-        "id": "dd908f37-8301-4c65-972b-9a08ab99ef97",
-        "contractId": "e93034b1-afdf-4971-a86f-462e63819157",
+        "id": "05260604-da9c-4cee-b91c-05f4f4fd97d5",
+        "contractId": "9b227a3d-8feb-44c0-a434-228e9d46aafc",
         "resolverId": "policy-verifier",
         "cost": 0.001,
         "paymentStatus": "SETTLED",
@@ -127,21 +127,21 @@
           "conversation_can_continue": true,
           "message": "I can do $975. If that works, I can send a public pickup location."
         },
-        "createdAt": "2026-09-30T19:29:17.816Z",
-        "transaction": "6TiDxDMJ49Wpw5QhVMocRqSMaqki177SEhFxMKcR4Jqm9uV12QCfS3DaNUEFCPaVLy5G15Q3nLu3hB4TF5F9UYL",
+        "createdAt": "2026-09-30T20:16:48.335Z",
+        "transaction": "5sYWDUdDrRbhJH8D8t7X8Behdsb4kvFVnjg48XPEqUt1ZdH2ku78bLqJhy4QuVUHQEcTK4YEdLw2ZtrA3pvPQULN",
         "network": "sandbox"
       }
     }
   },
   {
-    "id": "3bd41b91-152a-4aaa-82f9-ee7bb84243b1",
-    "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+    "id": "8f9081a2-77a9-40fc-9c39-aa8723d4e903",
+    "runId": "434fe904-9c7d-40b1-b284-5e6bb8372f21",
     "sequence": 9,
     "type": "AGENT_RESUMED",
-    "at": "2026-09-30T19:29:17.821Z",
+    "at": "2026-09-30T20:16:48.341Z",
     "data": {
       "message": "I can do $975. If that works, I can send a public pickup location.",
-      "receiptId": "dd908f37-8301-4c65-972b-9a08ab99ef97",
+      "receiptId": "05260604-da9c-4cee-b91c-05f4f4fd97d5",
       "runtime": "OpenAI Agents JS",
       "delivery": "Local negotiation transcript; no external message sent"
     }

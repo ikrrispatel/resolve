@@ -3,7 +3,7 @@
   "paymentExecuted": false,
   "receiptsIssued": 0,
   "claims": "Measured validator outcomes on shared synthetic fixtures; costs are hypothetical catalog/local quotes. No settlement or agent-resume proof.",
-  "createdAt": "2026-09-30T19:17:31.805Z",
+  "createdAt": "2026-09-30T20:16:39.312Z",
   "results": [
     {
       "strategy": "CHEAPEST_ONLY",
@@ -21,315 +21,597 @@
       },
       "unverifiedResumes": 0,
       "resumes": 0,
-      "evaluationLatencyMs": 1.552458999999999,
+      "evaluationLatencyMs": 1.7267909999999915,
       "cases": [
         {
           "id": "synthetic-0",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-1",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-2",
           "kind": "rich",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-3",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-4",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-5",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-6",
           "kind": "rich",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-7",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-8",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-9",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-10",
           "kind": "rich",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-11",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-12",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-13",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-14",
           "kind": "rich",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-15",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-16",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-17",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-18",
           "kind": "rich",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-19",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-20",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-21",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-22",
           "kind": "rich",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-23",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-24",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-25",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-26",
           "kind": "rich",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-27",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-28",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-29",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-30",
           "kind": "rich",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-31",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-32",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-33",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-34",
           "kind": "rich",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-35",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-36",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-37",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-38",
           "kind": "rich",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-39",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-malformed",
           "kind": "malformed",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-timeout",
           "kind": "timeout",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-provider-failure",
           "kind": "provider-failure",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-missing-evidence",
           "kind": "missing-evidence",
           "validated": false,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         }
       ]
     },
@@ -349,315 +631,597 @@
       },
       "unverifiedResumes": 0,
       "resumes": 0,
-      "evaluationLatencyMs": 0.26533299999999826,
+      "evaluationLatencyMs": 0.26045799999999986,
       "cases": [
         {
           "id": "synthetic-0",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.004,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "premium-policy",
+              "quotedCost": 0.004,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-1",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-2",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-3",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-4",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.004,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "premium-policy",
+              "quotedCost": 0.004,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-5",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-6",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-7",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-8",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.004,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "premium-policy",
+              "quotedCost": 0.004,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-9",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-10",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-11",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-12",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.004,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "premium-policy",
+              "quotedCost": 0.004,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-13",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-14",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-15",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-16",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.004,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "premium-policy",
+              "quotedCost": 0.004,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-17",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-18",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-19",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-20",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.004,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "premium-policy",
+              "quotedCost": 0.004,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-21",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-22",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-23",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-24",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.004,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "premium-policy",
+              "quotedCost": 0.004,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-25",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-26",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-27",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-28",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.004,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "premium-policy",
+              "quotedCost": 0.004,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-29",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-30",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-31",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-32",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.004,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "premium-policy",
+              "quotedCost": 0.004,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-33",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-34",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-35",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-36",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.004,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "premium-policy",
+              "quotedCost": 0.004,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-37",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-38",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-39",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-malformed",
           "kind": "malformed",
           "validated": false,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-timeout",
           "kind": "timeout",
           "validated": false,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-provider-failure",
           "kind": "provider-failure",
           "validated": false,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-missing-evidence",
           "kind": "missing-evidence",
           "validated": false,
           "quotedCost": 0.0015,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": false,
+              "escalated": false
+            }
+          ]
         }
       ]
     },
@@ -678,315 +1242,681 @@
       },
       "unverifiedResumes": 0,
       "resumes": 0,
-      "evaluationLatencyMs": 0.24362499999999443,
+      "evaluationLatencyMs": 0.2293329999999969,
       "cases": [
         {
           "id": "synthetic-0",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-1",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-2",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-3",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-4",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-5",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-6",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-7",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-8",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-9",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-10",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-11",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-12",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-13",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-14",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-15",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-16",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-17",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-18",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-19",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-20",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-21",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-22",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-23",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-24",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-25",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-26",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-27",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-28",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-29",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-30",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-31",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-32",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-33",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-34",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-35",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-36",
           "kind": "policy",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "cheap-policy",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-37",
           "kind": "text",
           "validated": true,
           "quotedCost": 0.001,
-          "attempts": 1
+          "attempts": 1,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": true,
+              "escalated": false
+            }
+          ]
         },
         {
           "id": "synthetic-38",
           "kind": "rich",
           "validated": true,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": true,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-39",
           "kind": "budget",
           "validated": false,
           "quotedCost": 0,
-          "attempts": 0
+          "attempts": 0,
+          "trace": []
         },
         {
           "id": "synthetic-malformed",
           "kind": "malformed",
           "validated": false,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": false,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-timeout",
           "kind": "timeout",
           "validated": false,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": false,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-provider-failure",
           "kind": "provider-failure",
           "validated": false,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": false,
+              "escalated": true
+            }
+          ]
         },
         {
           "id": "synthetic-missing-evidence",
           "kind": "missing-evidence",
           "validated": false,
           "quotedCost": 0.0025,
-          "attempts": 2
+          "attempts": 2,
+          "trace": [
+            {
+              "resolverId": "ocr",
+              "quotedCost": 0.001,
+              "validationPassed": false,
+              "escalated": false
+            },
+            {
+              "resolverId": "vision",
+              "quotedCost": 0.0015,
+              "validationPassed": false,
+              "escalated": true
+            }
+          ]
         }
       ]
     }

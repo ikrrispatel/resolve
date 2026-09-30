@@ -22,7 +22,7 @@ export default function Demo(){
  };
  const reset=async()=>{setError('');try{const r=await fetch('/api/reset',{method:'POST'});if(!r.ok)throw Error('A run is still active. Wait for completion before resetting.');source.current?.close();if(timer.current)clearInterval(timer.current);timer.current=null;tape.current=[];dispatch(null);setRunId('');setReplay(false);setBusy(false);}catch(e){setError(e instanceof Error?e.message:'Reset failed');}};
  const replayTape=()=>{if(!tape.current.length)return;source.current?.close();if(timer.current)clearInterval(timer.current);dispatch(null);setReplay(true);setBusy(true);let i=0;timer.current=setInterval(()=>{dispatch(tape.current[i++]);if(i===tape.current.length){clearInterval(timer.current!);timer.current=null;setBusy(false);}},650);};
- const evidence=kind==='evidence',has=(type:string)=>state.events.some(e=>e.type===type),passed=!!state.receipt,abstained=state.stage==='ABSTAINED',broken=state.events.length>0&&!passed;
+ const evidence=kind==='evidence',has=(type:string)=>type==='RECEIPT_ISSUED'?!!state.receipt:type==='AGENT_RESUMED'?state.stage==='RESUMED':state.events.some(e=>e.type===type),passed=!!state.receipt,abstained=state.stage==='ABSTAINED',broken=state.events.length>0&&!passed;
  const title=abstained?'The agent knows when to stop.':state.stage==='RESUMED'?'Verified. Repaired. Resumed.':passed?'A verified way forward.':has('ESCALATING')?'Partial evidence isn’t enough.':broken?'Execution hits a boundary.':'An exception. A way forward.';
  const contract=state.events.find(e=>e.type==='CONTRACT_CREATED')?.data;
  const cap=(contract?.budget as {maxTotal:number}|undefined)?.maxTotal??(kind==='abstain'?.0001:budget);
