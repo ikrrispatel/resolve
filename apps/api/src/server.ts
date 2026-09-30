@@ -18,7 +18,10 @@ import {pathToFileURL} from 'node:url';
 export async function createServer(port=4310){
  const origin=`http://127.0.0.1:${port}`;const app=express();app.use(express.json({limit:'100kb'}));
  const events=new EventStore();let active=false;
- app.use((req,res,next)=>{if(req.headers.origin&&!['http://localhost:3000','http://127.0.0.1:3000'].includes(req.headers.origin)){res.status(403).json({error:'ORIGIN_DENIED'});return;}next();});
+ const frontendOrigin=process.env.RESOLVE_FRONTEND_ORIGIN?new URL(process.env.RESOLVE_FRONTEND_ORIGIN).origin:undefined;
+ if(frontendOrigin&&!/^https?:\/\//.test(frontendOrigin))throw Error('INVALID_FRONTEND_ORIGIN');
+ const allowedOrigins=['http://localhost:3000','http://127.0.0.1:3000',...(frontendOrigin?[frontendOrigin]:[])];
+ app.use((req,res,next)=>{if(req.headers.origin&&!allowedOrigins.includes(req.headers.origin)){res.status(403).json({error:'ORIGIN_DENIED'});return;}next();});
  const policyResolver=new PolicyVerifierResolver(origin);const payer=await sandboxSigner();app.use(await sandboxGate());
  app.post('/paid/policy',async(req,res)=>{const parsed=ResolutionContractSchema.safeParse(req.body.contract);if(!parsed.success||parsed.data.success.kind!=='policy'){res.status(400).json({error:'INVALID_CONTRACT'});return;}res.json(await policyResolver.resolve(parsed.data));});
  app.post('/paid/evidence/:kind',(req,res)=>{const c=ResolutionContractSchema.safeParse(req.body.contract);if(!c.success||c.data.success.kind!=='evidence'||!['text','rich'].includes(req.params.kind)){res.status(400).json({error:'INVALID_CONTRACT'});return;}res.json(evidenceFixture(req.params.kind==='rich'));});

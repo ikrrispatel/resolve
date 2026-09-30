@@ -140,6 +140,22 @@ npm run typecheck
 npm run build
 ```
 
+## Hosted frontend configuration
+
+For Vercel, use `apps/web` as the Next.js root, install with
+`cd ../.. && npm ci`, and build with `cd ../.. && npm run build`. Set **`RESOLVE_API_ORIGIN`** at build time to the reachable
+Resolve API origin (without `/api`). The frontend uses same-origin `/api/*`
+requests; Next.js forwards them server-side, including SSE. Production builds
+never default to a localhost backend. Without this setting, the pages render
+but live demo and benchmark requests remain unavailable.
+
+On the API server, set `RESOLVE_FRONTEND_ORIGIN` to the exact hosted frontend
+origin. Other origins remain denied; local development origins stay supported.
+Keep `OPENAI_API_KEY` on the Resolve API server, never in a `NEXT_PUBLIC_`
+variable. This frontend change does not deploy the process-local Express
+runtime or make it a public multi-user service; a hosted backend and its access
+controls remain a separate deployment prerequisite.
+
 ## Terminal execution trace
 
 The CLI uses a compact execution path: `▶` running, `╳` exception or blocked
