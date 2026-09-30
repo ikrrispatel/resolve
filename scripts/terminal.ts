@@ -30,7 +30,7 @@ export function demoRenderer(options:{agent:boolean;manifests:ResolverManifest[]
   state=reduceEvent(state,event);const d=event.data;
   if(options.verbose)t.line(`${event.type} ${JSON.stringify(d)}`,'muted');
   switch(event.type){
-   case 'EXCEPTION_CREATED':t.row('task',d.task);t.path('╳','blocked');t.line('                         │','blocked');t.line(`                         ▼ ${d.type}`,'blocked');break;
+   case 'EXCEPTION_CREATED':t.row('task',d.task);t.path('╳','blocked');t.line('                         │','blocked');t.line('                         ▼ AGENT EXCEPTION','blocked');t.row('exception',d.type,'blocked');break;
    case 'CONTRACT_CREATED':{
     t.section('resolution contract');const required=d.requiredState as Record<string,unknown>;
     if(d.kind==='policy'){t.row('price floor',`>= ${usd(Number(required.minimumPrice))}`);t.row('home address',required.homeAddressDisclosed===false?'private':'unspecified');t.row('conversation',required.conversationCanContinue===true?'actionable':'unspecified');}
@@ -38,11 +38,11 @@ export function demoRenderer(options:{agent:boolean;manifests:ResolverManifest[]
     const budget=d.budget as {maxTotal:number};t.row('max resolution spend',usd(budget.maxTotal));
     t.section('resolution ladder','active');for(const m of options.manifests)t.row(m.name,usd(m.quotedPriceUsd),'muted');break;
    }
-   case 'RESOLVER_SELECTED':t.section(`resolver ${String(++attempt).padStart(2,'0')} / ${d.name}`,'active');t.row('selected quote',usd(Number(d.quotedPrice)),'active');break;
-   case 'PAYMENT_REQUIRED':t.section('payment','active');t.row('challenge','402','active');t.row('requested',usd(Number(d.amount)),'active');break;
-   case 'PAYMENT_AUTHORIZED':t.row('authorization','allowed · signing / retry','active');break;
-   case 'PAYMENT_SETTLED':t.line('PAYMENT SETTLED','active');t.row('rail',`x402 / Solana ${d.network}`,'active');t.row('amount',usd(Number(d.amount)),'active');t.row('total spent',usd(Number(d.spent)));t.line('transaction','muted');t.line(String(d.transaction),'muted');break;
-   case 'RESULT_RECEIVED':t.row('payload','deterministic provider evidence','muted');break;
+   case 'RESOLVER_SELECTED':t.section(`resolver selected ${String(++attempt).padStart(2,'0')} / ${d.name}`,'active');t.row('selected quote',usd(Number(d.quotedPrice)),'active');break;
+   case 'PAYMENT_REQUIRED':t.section('payment','active');t.row('challenge','402','muted');t.row('requested',usd(Number(d.amount)),'active');break;
+   case 'PAYMENT_AUTHORIZED':if(options.verbose)t.row('authorization','allowed · signing / retry','muted');break;
+   case 'PAYMENT_SETTLED':t.line('PAYMENT SETTLED','active');t.row('rail',`x402 / Solana ${d.network}`,'muted');t.row('amount',usd(Number(d.amount)),'active');t.row('total spent',usd(Number(d.spent)));if(options.verbose){t.line('transaction','muted');t.line(String(d.transaction),'muted');}else{const id=String(d.transaction);t.row('transaction',id.length>20?`${id.slice(0,6)}...${id.slice(-8)}`:id,'muted');}break;
+   case 'RESULT_RECEIVED':if(options.verbose)t.row('payload','deterministic provider evidence','muted');break;
    case 'VALIDATION_FAILED':case 'VALIDATION_PASSED':{
     const pass=event.type==='VALIDATION_PASSED';t.section('independent SuccessContract validation',pass?'verified':'blocked');
     const labels:Record<string,string>={counter_offer:'price floor',home_address_disclosed:'address private',conversation_can_continue:'actionable',text_evidence:'text evidence',logo_or_label_evidence:'label evidence',product_or_web_entity_evidence:'web evidence'};
