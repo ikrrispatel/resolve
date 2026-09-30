@@ -1,0 +1,9 @@
+import {z} from 'zod';
+export const catalog={
+ ocr:{id:'solana-foundation/alibaba/ocr',url:'https://ocr.alibaba.gateway-402.com/compatible-mode/v1/chat/completions',observedScheme:'upto',observedCapUsd:.1},
+ vision:{id:'solana-foundation/google/vision',url:'https://vision.google.gateway-402.com/v1/images:annotate',observedScheme:'exact',observedPriceUsd:.0015}
+} as const;
+export function ocrRequest(imageUrl:string){return {model:'qwen-vl-ocr-2025-11-20',messages:[{role:'user',content:[{type:'image_url',image_url:{url:imageUrl}},{type:'text',text:'Extract the visible text.'}]}],ocr_options:{task:'text_recognition'}};}
+export function visionRequest(imageUrl:string){return {requests:[{image:{source:{imageUri:imageUrl}},features:[{type:'TEXT_DETECTION'},{type:'LABEL_DETECTION'},{type:'LOGO_DETECTION'},{type:'WEB_DETECTION'}]}]};}
+export function normalizeOcr(raw:unknown){const result=z.object({choices:z.array(z.object({message:z.object({content:z.string()})})).min(1)}).parse(raw);return {provider:catalog.ocr.id,textEvidence:result.choices.map(c=>c.message.content).filter(Boolean)};}
+export function normalizeVision(raw:unknown){const annotation=z.object({description:z.string().optional()});const r=z.object({responses:z.array(z.object({error:z.unknown().optional(),textAnnotations:z.array(annotation).optional(),labelAnnotations:z.array(annotation).optional(),logoAnnotations:z.array(annotation).optional(),webDetection:z.object({webEntities:z.array(annotation).optional()}).optional()})).min(1)}).parse(raw).responses[0];if(r.error)throw Error('PROVIDER_ERROR');const values=(a:{description?:string}[]|undefined)=>(a??[]).map(x=>x.description??'').filter(Boolean);return {provider:catalog.vision.id,textEvidence:values(r.textAnnotations),logoOrLabelEvidence:[...values(r.labelAnnotations),...values(r.logoAnnotations)],productOrWebEntityEvidence:values(r.webDetection?.webEntities)};}

@@ -1,0 +1,239 @@
+{
+  "status": "PASS",
+  "network": "SANDBOX_ONLY",
+  "providerPayloads": "DETERMINISTIC",
+  "records": [
+    {
+      "kind": "policy",
+      "run": 1,
+      "status": "PASS",
+      "runId": "07479d6e-3651-4631-8671-fd2a0de5d585",
+      "sandboxSettlements": [
+        {
+          "resolverId": "policy-verifier",
+          "amount": 0.001,
+          "spent": 0.001,
+          "transaction": "6TiDxDMJ49Wpw5QhVMocRqSMaqki177SEhFxMKcR4Jqm9uV12QCfS3DaNUEFCPaVLy5G15Q3nLu3hB4TF5F9UYL",
+          "network": "sandbox"
+        }
+      ],
+      "receiptCount": 1,
+      "resumeCount": 1,
+      "replaysVerified": 3,
+      "resetVerified": true,
+      "providerPayload": "DETERMINISTIC",
+      "agent": "LIVE_OPENAI"
+    },
+    {
+      "kind": "policy",
+      "run": 2,
+      "status": "PASS",
+      "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+      "sandboxSettlements": [
+        {
+          "resolverId": "policy-verifier",
+          "amount": 0.001,
+          "spent": 0.001,
+          "transaction": "5otURyEVxrLM8LbFvEnrcXG8QryqbnnpxNvCP3554izVM6XMN48B4TGLj8kyRC5T9QvYy6oHYA6pcWfQ4USJmQ5K",
+          "network": "sandbox"
+        }
+      ],
+      "receiptCount": 1,
+      "resumeCount": 1,
+      "replaysVerified": 3,
+      "resetVerified": true,
+      "providerPayload": "DETERMINISTIC",
+      "agent": "LIVE_OPENAI"
+    },
+    {
+      "kind": "policy",
+      "run": 3,
+      "status": "PASS",
+      "runId": "3ed70ec5-a83a-4c1f-ac7f-e10aeb2b9cee",
+      "sandboxSettlements": [
+        {
+          "resolverId": "policy-verifier",
+          "amount": 0.001,
+          "spent": 0.001,
+          "transaction": "2u6q7mWGdAREQE8U7gREBU1e1eYoM9BWRRKFzy1eHVJiCwr4xvv85mi921UM5icek4zCn55HinXas7SFBZEgEXYj",
+          "network": "sandbox"
+        }
+      ],
+      "receiptCount": 1,
+      "resumeCount": 1,
+      "replaysVerified": 3,
+      "resetVerified": true,
+      "providerPayload": "DETERMINISTIC",
+      "agent": "LIVE_OPENAI"
+    },
+    {
+      "kind": "evidence",
+      "run": 1,
+      "status": "PASS",
+      "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+      "sandboxSettlements": [
+        {
+          "resolverId": "fixture-text",
+          "amount": 0.001,
+          "spent": 0.001,
+          "transaction": "3DUkoS7nBsekbyMapvvKn9HjV9eghaD8iiQRffMDsHRDMca7JCFjx1tCcXXwbeRg4jBDbUhNF2bgJv6PsXMQV6xB",
+          "network": "sandbox"
+        },
+        {
+          "resolverId": "fixture-rich",
+          "amount": 0.0015,
+          "spent": 0.0025,
+          "transaction": "5HQkms7mfxCUQcYeF69DCZFqoRChUQKaevuKX5Rx9wdys8tVEtCqUdfnaXvLaPtDYpEBuDQbYyN38QjPCaFANGjJ",
+          "network": "sandbox"
+        }
+      ],
+      "receiptCount": 1,
+      "resumeCount": 1,
+      "replaysVerified": 3,
+      "resetVerified": true,
+      "providerPayload": "DETERMINISTIC",
+      "agent": "LIVE_OPENAI"
+    },
+    {
+      "kind": "evidence",
+      "run": 2,
+      "status": "PASS",
+      "runId": "e6817b36-0996-4c84-9eb1-88c2d0e9a5bf",
+      "sandboxSettlements": [
+        {
+          "resolverId": "fixture-text",
+          "amount": 0.001,
+          "spent": 0.001,
+          "transaction": "581aW1A5m88TZXrvAWCsR48kAacAKph8YqPZCcs4pULGMDwX1J479FMG7XNHjoYCamP6u9VodvfceZwe2LUqsUnP",
+          "network": "sandbox"
+        },
+        {
+          "resolverId": "fixture-rich",
+          "amount": 0.0015,
+          "spent": 0.0025,
+          "transaction": "2WyBjEdmT9vtoajUmRcVEdmYqJcb7SarUkmeeP9f2t3iPo5KMawD7HBTFJ97KqMBzSHJcH4BsHc7EpJY1abB4w92",
+          "network": "sandbox"
+        }
+      ],
+      "receiptCount": 1,
+      "resumeCount": 1,
+      "replaysVerified": 3,
+      "resetVerified": true,
+      "providerPayload": "DETERMINISTIC",
+      "agent": "LIVE_OPENAI"
+    },
+    {
+      "kind": "evidence",
+      "run": 3,
+      "status": "PASS",
+      "runId": "076a84d7-22c2-48a2-b21c-79ff54aa3f24",
+      "sandboxSettlements": [
+        {
+          "resolverId": "fixture-text",
+          "amount": 0.001,
+          "spent": 0.001,
+          "transaction": "29rcfva7iBtteK9fX1QCnq4pgoj4X3iZAqRjDyjCGBCWuRJGANyivJY7ZFFdh31XcC74CqRuxPMmeodcHgWwi7RX",
+          "network": "sandbox"
+        },
+        {
+          "resolverId": "fixture-rich",
+          "amount": 0.0015,
+          "spent": 0.0025,
+          "transaction": "5DtBxkvNU7SZDqgrnS8TLBRAUsRyJwRxtVv4JmBAs5Y2rvZvfLRkSG1AfJ39rxFS3W1YgbyTKE1o3GF3D9bjuvxQ",
+          "network": "sandbox"
+        }
+      ],
+      "receiptCount": 1,
+      "resumeCount": 1,
+      "replaysVerified": 3,
+      "resetVerified": true,
+      "providerPayload": "DETERMINISTIC",
+      "agent": "LIVE_OPENAI"
+    },
+    {
+      "kind": "abstain",
+      "run": 1,
+      "status": "PASS",
+      "runId": "e65c4557-2eb7-4c49-98f6-927929b0dda6",
+      "sandboxSettlements": [],
+      "receiptCount": 0,
+      "resumeCount": 0,
+      "replaysVerified": 3,
+      "resetVerified": true,
+      "providerPayload": "DETERMINISTIC",
+      "agent": "LIVE_OPENAI"
+    },
+    {
+      "kind": "abstain",
+      "run": 2,
+      "status": "PASS",
+      "runId": "4923a496-a245-47dc-8638-35fbae54521b",
+      "sandboxSettlements": [],
+      "receiptCount": 0,
+      "resumeCount": 0,
+      "replaysVerified": 3,
+      "resetVerified": true,
+      "providerPayload": "DETERMINISTIC",
+      "agent": "LIVE_OPENAI"
+    },
+    {
+      "kind": "abstain",
+      "run": 3,
+      "status": "PASS",
+      "runId": "a60cb36c-78e2-45a3-a4cf-5878d41594d1",
+      "sandboxSettlements": [],
+      "receiptCount": 0,
+      "resumeCount": 0,
+      "replaysVerified": 3,
+      "resetVerified": true,
+      "providerPayload": "DETERMINISTIC",
+      "agent": "LIVE_OPENAI"
+    },
+    {
+      "kind": "receipt-gate",
+      "run": 1,
+      "status": "PASS",
+      "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+      "sandboxSettlements": [
+        {
+          "resolverId": "fixture-text",
+          "amount": 0.001,
+          "spent": 0.001,
+          "transaction": "3FXdjHMEEGVjeFXe6K8mKniNK8sLvuBgzvJVpDDdbrEC6G16ztHnLwzxMCQtSZ76hYcSzDhHkP96bMJQaopb3xeT",
+          "network": "sandbox"
+        }
+      ],
+      "receiptCount": 0,
+      "resumeCount": 0,
+      "replaysVerified": 3,
+      "resetVerified": true,
+      "providerPayload": "DETERMINISTIC",
+      "agent": "LIVE_OPENAI"
+    }
+  ],
+  "regression": {
+    "testsPassed": 33,
+    "typecheck": "PASS",
+    "productionBuild": "PASS",
+    "smoke": {
+      "initialHttp": 402,
+      "paidHttp": 200,
+      "status": "SETTLED",
+      "network": "sandbox",
+      "transaction": "2HXtuKLvP5HKiZX6oEWo196deSY6WYSXgWJdDRDSWJpS69F6vnZaZdLymCJHZTJ4ih3n2Bw8fc684DyJ5EEVicCR"
+    }
+  },
+  "failureHandling": {
+    "mode": "TEST_ONLY_INJECTED_IO_REAL_LADDER_AND_SDK",
+    "cases": [
+      "malformed",
+      "timeout",
+      "payment-failure",
+      "invalid-result"
+    ],
+    "allFailClosed": true
+  },
+  "issuesFound": [],
+  "productChanges": [],
+  "backendFrozen": true
+}

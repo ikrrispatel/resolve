@@ -1,0 +1,149 @@
+[
+  {
+    "id": "6e74a352-27c5-436c-a648-8847181da39c",
+    "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+    "sequence": 0,
+    "type": "EXCEPTION_CREATED",
+    "at": "2026-09-30T19:29:19.341Z",
+    "data": {
+      "exceptionId": "72591613-db84-42e4-881b-6c4a95063c82",
+      "type": "POLICY_CONFLICT",
+      "task": "Sell my MacBook",
+      "mode": "SANDBOX_POLICY",
+      "agentRuntime": "OpenAI Agents JS",
+      "reason": "PENDING_TOOL_REQUIRES_VERIFIED_RESOLUTION"
+    }
+  },
+  {
+    "id": "cb925721-c03c-4e83-b3ec-2fc8159d44d1",
+    "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+    "sequence": 1,
+    "type": "CONTRACT_CREATED",
+    "at": "2026-09-30T19:29:19.341Z",
+    "data": {
+      "contractId": "b1ea38df-3c96-407d-826f-e0eb00797299",
+      "budget": {
+        "maxTotal": 0.05,
+        "maxAttempt": 0.05
+      },
+      "kind": "policy",
+      "requiredState": {
+        "minimumPrice": 975,
+        "homeAddressDisclosed": false,
+        "conversationCanContinue": true
+      }
+    }
+  },
+  {
+    "id": "81a9c8b6-430b-473c-9918-00a50d437d24",
+    "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+    "sequence": 2,
+    "type": "RESOLVER_SELECTED",
+    "at": "2026-09-30T19:29:19.341Z",
+    "data": {
+      "resolverId": "policy-verifier",
+      "name": "Policy Verifier",
+      "quotedPrice": 0.001,
+      "prior": "high"
+    }
+  },
+  {
+    "id": "52b81114-5240-4c85-8c09-6eb45d90efc4",
+    "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+    "sequence": 3,
+    "type": "PAYMENT_REQUIRED",
+    "at": "2026-09-30T19:29:19.345Z",
+    "data": {
+      "amount": 0.001
+    }
+  },
+  {
+    "id": "4c1f4b31-f653-4352-88f2-68124dbc8b68",
+    "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+    "sequence": 4,
+    "type": "PAYMENT_AUTHORIZED",
+    "at": "2026-09-30T19:29:19.345Z",
+    "data": {
+      "amount": 0.001,
+      "reason": "BUDGET_GUARD"
+    }
+  },
+  {
+    "id": "f51f5e35-e49c-4445-b48e-79071e54ac22",
+    "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+    "sequence": 5,
+    "type": "PAYMENT_SETTLED",
+    "at": "2026-09-30T19:29:20.563Z",
+    "data": {
+      "resolverId": "policy-verifier",
+      "amount": 0.001,
+      "spent": 0.001,
+      "transaction": "5otURyEVxrLM8LbFvEnrcXG8QryqbnnpxNvCP3554izVM6XMN48B4TGLj8kyRC5T9QvYy6oHYA6pcWfQ4USJmQ5K",
+      "network": "sandbox"
+    }
+  },
+  {
+    "id": "4829486f-1aa8-49d3-98ad-c4edbe706955",
+    "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+    "sequence": 6,
+    "type": "RESULT_RECEIVED",
+    "at": "2026-09-30T19:29:20.564Z",
+    "data": {
+      "resolverId": "policy-verifier"
+    }
+  },
+  {
+    "id": "c584cd58-8d93-4579-996a-89eeb3f4e28c",
+    "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+    "sequence": 7,
+    "type": "VALIDATION_PASSED",
+    "at": "2026-09-30T19:29:20.564Z",
+    "data": {
+      "resolverId": "policy-verifier",
+      "checks": {
+        "counter_offer": true,
+        "home_address_disclosed": true,
+        "conversation_can_continue": true
+      }
+    }
+  },
+  {
+    "id": "dd55fbaf-7c62-43c8-ae9c-4d5e37f7de9f",
+    "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+    "sequence": 8,
+    "type": "RECEIPT_ISSUED",
+    "at": "2026-09-30T19:29:20.564Z",
+    "data": {
+      "receipt": {
+        "id": "0b8c1a31-dd69-4b73-af8c-5a1c563c1506",
+        "contractId": "b1ea38df-3c96-407d-826f-e0eb00797299",
+        "resolverId": "policy-verifier",
+        "cost": 0.001,
+        "paymentStatus": "SETTLED",
+        "verificationStatus": "PASS",
+        "result": {
+          "counter_offer": 975,
+          "share_address": false,
+          "conversation_can_continue": true,
+          "message": "I can do $975. If that works, I can send a public pickup location."
+        },
+        "createdAt": "2026-09-30T19:29:20.564Z",
+        "transaction": "5otURyEVxrLM8LbFvEnrcXG8QryqbnnpxNvCP3554izVM6XMN48B4TGLj8kyRC5T9QvYy6oHYA6pcWfQ4USJmQ5K",
+        "network": "sandbox"
+      }
+    }
+  },
+  {
+    "id": "da1134bb-9aa9-4c40-82d6-97b40eb934a6",
+    "runId": "28c2c41e-024c-4c65-8109-71a84537ea5d",
+    "sequence": 9,
+    "type": "AGENT_RESUMED",
+    "at": "2026-09-30T19:29:20.566Z",
+    "data": {
+      "message": "I can do $975. If that works, I can send a public pickup location.",
+      "receiptId": "0b8c1a31-dd69-4b73-af8c-5a1c563c1506",
+      "runtime": "OpenAI Agents JS",
+      "delivery": "Local negotiation transcript; no external message sent"
+    }
+  }
+]

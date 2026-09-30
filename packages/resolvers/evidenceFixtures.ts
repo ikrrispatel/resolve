@@ -1,0 +1,4 @@
+import type {ResolverManifest} from '../core/schemas';
+/** Explicit synthetic evidence for offline provider fallback; never live catalog output. */
+export function evidenceFixture(rich:boolean){return rich?{provider:'SYNTHETIC_RICH_FIXTURE',textEvidence:['EXAMPLE CAMERA'],logoOrLabelEvidence:['Camera'],productOrWebEntityEvidence:['Digital camera']}:{provider:'SYNTHETIC_TEXT_FIXTURE',textEvidence:['EXAMPLE CAMERA']};}
+export function evidenceManifests(origin:string):ResolverManifest[]{return [false,true].map(rich=>({id:rich?'fixture-rich':'fixture-text',name:rich?'Rich evidence fixture':'Text evidence fixture',source:'LOCAL',class:'SPECIALIST',capabilities:rich?['text_evidence','logo_or_label_evidence','product_or_web_entity_evidence']:['text_evidence'],quotedPriceUsd:rich?.0015:.001,endpoint:origin+(rich?'/paid/evidence/rich':'/paid/evidence/text'),expectedLatencyMs:5000,outputSchema:'evidence',network:'sandbox',prior:'high'}));}

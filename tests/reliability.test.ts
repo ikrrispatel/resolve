@@ -1,0 +1,11 @@
+import {it,expect,vi} from 'vitest';
+import {ResolutionLadder} from '../packages/core/runtime';
+import {scenario,policyManifest} from '../packages/core/scenarios';
+import {policyResult} from '../packages/resolvers/policyVerifier';
+import {evidenceFixture,evidenceManifests} from '../packages/resolvers/evidenceFixtures';
+import type {PaymentResult} from '../packages/payments/types';
+const settled=(body:unknown):PaymentResult=>({status:'SETTLED',amountUsd:.001,transaction:'TEST_DOUBLE_NOT_A_REAL_CHAIN_PAYMENT',responseStatus:200,responseBody:body});
+it('paid provider 500 cannot produce a receipt even with a valid body',async()=>{const c=scenario('policy').contract;const r=await new ResolutionLadder({pay:async()=>({...settled(policyResult(c)),responseStatus:500})}).resolve(c,[policyManifest('http://localhost')],'sandbox',()=>{});expect(r.receipt).toBeUndefined();expect(r.spent).toBe(.001);expect(r.attempts[0].status).toBe('VALIDATION_FAIL');});
+it('payment settling after deadline counts spend but cannot resume',async()=>{vi.useFakeTimers();try{const c=scenario('policy').contract;c.deadlineMs=4000;const r=await new ResolutionLadder({pay:async()=>{vi.setSystemTime(Date.now()+5000);return settled(policyResult(c));}}).resolve(c,[policyManifest('http://localhost')],'sandbox',()=>{});expect(r.receipt).toBeUndefined();expect(r.spent).toBe(.001);expect(r.attempts[0].status).toBe('TIMEOUT');}finally{vi.useRealTimers();}});
+it('failed specialist ends in abstention without receipt',async()=>{const events:string[]=[];const r=await new ResolutionLadder({pay:async()=>settled(evidenceFixture(false))}).resolve(scenario('evidence').contract,evidenceManifests('http://localhost'),'sandbox',t=>events.push(t));expect(r.receipt).toBeUndefined();expect(r.attempts).toHaveLength(2);expect(events.at(-1)).toBe('ABSTAINED');expect(events).not.toContain('AGENT_RESUMED');});
+it('adapter exceptions stop all further payment attempts',async()=>{const pay=vi.fn(async()=>{throw Error('network timeout after possible signing');});const r=await new ResolutionLadder({pay}).resolve(scenario('evidence').contract,evidenceManifests('http://localhost'),'sandbox',()=>{});expect(pay).toHaveBeenCalledTimes(1);expect(r.receipt).toBeUndefined();});

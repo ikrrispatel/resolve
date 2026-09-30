@@ -1,0 +1,121 @@
+[
+  {
+    "id": "6af143cf-11a6-4d8d-b2e4-7115cae5d131",
+    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "sequence": 0,
+    "type": "EXCEPTION_CREATED",
+    "at": "2026-09-30T19:29:44.367Z",
+    "data": {
+      "exceptionId": "9bb6fc7f-af2a-4cf6-8847-ed00a577b956",
+      "type": "EVIDENCE_GAP",
+      "task": "Review image evidence",
+      "mode": "SANDBOX_FIXTURE_ESCALATION",
+      "agentRuntime": "OpenAI Agents JS",
+      "reason": "PENDING_TOOL_REQUIRES_VERIFIED_RESOLUTION"
+    }
+  },
+  {
+    "id": "4cb2ec35-743e-4339-bfb9-8454e7abc50c",
+    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "sequence": 1,
+    "type": "CONTRACT_CREATED",
+    "at": "2026-09-30T19:29:44.367Z",
+    "data": {
+      "contractId": "89393065-d8f5-40de-8143-cdacbfd3cf84",
+      "budget": {
+        "maxTotal": 0.001,
+        "maxAttempt": 0.001
+      },
+      "kind": "evidence",
+      "requiredState": {
+        "text_evidence": true,
+        "logo_or_label_evidence": true,
+        "product_or_web_entity_evidence": true
+      }
+    }
+  },
+  {
+    "id": "96686152-25ce-435d-9e8f-e85a80c17d09",
+    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "sequence": 2,
+    "type": "RESOLVER_SELECTED",
+    "at": "2026-09-30T19:29:44.367Z",
+    "data": {
+      "resolverId": "fixture-text",
+      "name": "Text evidence fixture",
+      "quotedPrice": 0.001,
+      "prior": "high"
+    }
+  },
+  {
+    "id": "15de2ed7-893b-4397-97b5-49559861e847",
+    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "sequence": 3,
+    "type": "PAYMENT_REQUIRED",
+    "at": "2026-09-30T19:29:44.369Z",
+    "data": {
+      "amount": 0.001
+    }
+  },
+  {
+    "id": "49b7d58c-b4be-40db-b7f1-26efb4e3aef4",
+    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "sequence": 4,
+    "type": "PAYMENT_AUTHORIZED",
+    "at": "2026-09-30T19:29:44.369Z",
+    "data": {
+      "amount": 0.001,
+      "reason": "BUDGET_GUARD"
+    }
+  },
+  {
+    "id": "5025e486-83cf-46b9-bcff-d6a8de6269e6",
+    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "sequence": 5,
+    "type": "PAYMENT_SETTLED",
+    "at": "2026-09-30T19:29:45.824Z",
+    "data": {
+      "resolverId": "fixture-text",
+      "amount": 0.001,
+      "spent": 0.001,
+      "transaction": "3FXdjHMEEGVjeFXe6K8mKniNK8sLvuBgzvJVpDDdbrEC6G16ztHnLwzxMCQtSZ76hYcSzDhHkP96bMJQaopb3xeT",
+      "network": "sandbox"
+    }
+  },
+  {
+    "id": "3af05d93-0368-40b4-893e-3be81d3b5635",
+    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "sequence": 6,
+    "type": "RESULT_RECEIVED",
+    "at": "2026-09-30T19:29:45.824Z",
+    "data": {
+      "resolverId": "fixture-text"
+    }
+  },
+  {
+    "id": "7e06ecbf-570d-47a8-a69e-e80bf7ab5786",
+    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "sequence": 7,
+    "type": "VALIDATION_FAILED",
+    "at": "2026-09-30T19:29:45.824Z",
+    "data": {
+      "resolverId": "fixture-text",
+      "checks": {
+        "text_evidence": true,
+        "logo_or_label_evidence": false,
+        "product_or_web_entity_evidence": false
+      }
+    }
+  },
+  {
+    "id": "637b1561-fd2e-4ff8-a7af-1d2234c31855",
+    "runId": "0d5a4065-e6a9-401c-82e9-40feee63b6b3",
+    "sequence": 8,
+    "type": "ABSTAINED",
+    "at": "2026-09-30T19:29:45.824Z",
+    "data": {
+      "reason": "NO_VERIFIED_RESOLUTION",
+      "spent": 0.001
+    }
+  }
+]

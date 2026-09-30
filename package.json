@@ -1,0 +1,45 @@
+{
+  "name": "resolve",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx scripts/dev.ts",
+    "api": "tsx apps/api/src/server.ts",
+    "web": "next dev apps/web -p 3000",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "payment:smoke": "tsx scripts/payment-smoke.ts",
+    "demo:policy": "tsx scripts/demo.ts policy",
+    "demo:escalate": "tsx scripts/demo.ts evidence",
+    "demo:abstain": "tsx scripts/demo.ts abstain",
+    "demo:reset": "tsx scripts/reset.ts",
+    "benchmark": "tsx scripts/benchmark.ts",
+    "build": "next build apps/web"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "@openai/agents": "^0.18.0",
+    "@solana/kit": "^5.5.1",
+    "@x402/core": "^2.28.0",
+    "@x402/express": "^2.28.0",
+    "@x402/fetch": "^2.28.0",
+    "@x402/svm": "^2.28.0",
+    "express": "^5.2.1",
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  }
+}

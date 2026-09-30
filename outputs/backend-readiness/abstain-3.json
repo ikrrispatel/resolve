@@ -1,0 +1,48 @@
+[
+  {
+    "id": "7033c8eb-5879-483d-ac73-7e0cc5000fb8",
+    "runId": "a60cb36c-78e2-45a3-a4cf-5878d41594d1",
+    "sequence": 0,
+    "type": "EXCEPTION_CREATED",
+    "at": "2026-09-30T19:29:42.962Z",
+    "data": {
+      "exceptionId": "9ea9ca4a-60cb-4cdf-8e04-f0acd0587f39",
+      "type": "POLICY_CONFLICT",
+      "task": "Sell my MacBook",
+      "mode": "SANDBOX_POLICY",
+      "agentRuntime": "OpenAI Agents JS",
+      "reason": "PENDING_TOOL_REQUIRES_VERIFIED_RESOLUTION"
+    }
+  },
+  {
+    "id": "d7134759-8464-4ce2-bac9-00238eb5195c",
+    "runId": "a60cb36c-78e2-45a3-a4cf-5878d41594d1",
+    "sequence": 1,
+    "type": "CONTRACT_CREATED",
+    "at": "2026-09-30T19:29:42.962Z",
+    "data": {
+      "contractId": "5d0ca87d-f246-4477-bef5-e8e684c790c2",
+      "budget": {
+        "maxTotal": 0.0001,
+        "maxAttempt": 0.0001
+      },
+      "kind": "policy",
+      "requiredState": {
+        "minimumPrice": 975,
+        "homeAddressDisclosed": false,
+        "conversationCanContinue": true
+      }
+    }
+  },
+  {
+    "id": "2381f1cf-f7b7-4b6e-aab6-597597cc6727",
+    "runId": "a60cb36c-78e2-45a3-a4cf-5878d41594d1",
+    "sequence": 2,
+    "type": "ABSTAINED",
+    "at": "2026-09-30T19:29:42.962Z",
+    "data": {
+      "reason": "NO_ELIGIBLE_RESOLVER",
+      "spent": 0
+    }
+  }
+]

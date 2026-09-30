@@ -1,0 +1,994 @@
+{
+  "mode": "SYNTHETIC_VALIDATION_ONLY",
+  "paymentExecuted": false,
+  "receiptsIssued": 0,
+  "claims": "Measured validator outcomes on shared synthetic fixtures; costs are hypothetical catalog/local quotes. No settlement or agent-resume proof.",
+  "createdAt": "2026-09-30T19:17:31.805Z",
+  "results": [
+    {
+      "strategy": "CHEAPEST_ONLY",
+      "fixtureCount": 44,
+      "validated": 20,
+      "validationRate": 0.45454545454545453,
+      "quotedSpend": 0.034,
+      "quotedCostPerValidatedResolution": 0.0017000000000000012,
+      "validationFailures": 14,
+      "escalations": 0,
+      "abstentions": 24,
+      "resolverMix": {
+        "cheap-policy": 10,
+        "ocr": 24
+      },
+      "unverifiedResumes": 0,
+      "resumes": 0,
+      "evaluationLatencyMs": 1.552458999999999,
+      "cases": [
+        {
+          "id": "synthetic-0",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-1",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-2",
+          "kind": "rich",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-3",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-4",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-5",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-6",
+          "kind": "rich",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-7",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-8",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-9",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-10",
+          "kind": "rich",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-11",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-12",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-13",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-14",
+          "kind": "rich",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-15",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-16",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-17",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-18",
+          "kind": "rich",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-19",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-20",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-21",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-22",
+          "kind": "rich",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-23",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-24",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-25",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-26",
+          "kind": "rich",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-27",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-28",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-29",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-30",
+          "kind": "rich",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-31",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-32",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-33",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-34",
+          "kind": "rich",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-35",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-36",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-37",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-38",
+          "kind": "rich",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-39",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-malformed",
+          "kind": "malformed",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-timeout",
+          "kind": "timeout",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-provider-failure",
+          "kind": "provider-failure",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-missing-evidence",
+          "kind": "missing-evidence",
+          "validated": false,
+          "quotedCost": 0.001,
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "strategy": "PREMIUM_ONLY",
+      "fixtureCount": 44,
+      "validated": 30,
+      "validationRate": 0.6818181818181818,
+      "quotedSpend": 0.076,
+      "quotedCostPerValidatedResolution": 0.0025333333333333345,
+      "validationFailures": 4,
+      "escalations": 0,
+      "abstentions": 14,
+      "resolverMix": {
+        "premium-policy": 10,
+        "vision": 24
+      },
+      "unverifiedResumes": 0,
+      "resumes": 0,
+      "evaluationLatencyMs": 0.26533299999999826,
+      "cases": [
+        {
+          "id": "synthetic-0",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.004,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-1",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-2",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-3",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-4",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.004,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-5",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-6",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-7",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-8",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.004,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-9",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-10",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-11",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-12",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.004,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-13",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-14",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-15",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-16",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.004,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-17",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-18",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-19",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-20",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.004,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-21",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-22",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-23",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-24",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.004,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-25",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-26",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-27",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-28",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.004,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-29",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-30",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-31",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-32",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.004,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-33",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-34",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-35",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-36",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.004,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-37",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-38",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-39",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-malformed",
+          "kind": "malformed",
+          "validated": false,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-timeout",
+          "kind": "timeout",
+          "validated": false,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-provider-failure",
+          "kind": "provider-failure",
+          "validated": false,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-missing-evidence",
+          "kind": "missing-evidence",
+          "validated": false,
+          "quotedCost": 0.0015,
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "strategy": "RESOLVE",
+      "fixtureCount": 44,
+      "validated": 30,
+      "validationRate": 0.6818181818181818,
+      "quotedSpend": 0.055,
+      "quotedCostPerValidatedResolution": 0.0018333333333333342,
+      "validationFailures": 18,
+      "escalations": 14,
+      "abstentions": 14,
+      "resolverMix": {
+        "cheap-policy": 10,
+        "ocr": 24,
+        "vision": 14
+      },
+      "unverifiedResumes": 0,
+      "resumes": 0,
+      "evaluationLatencyMs": 0.24362499999999443,
+      "cases": [
+        {
+          "id": "synthetic-0",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-1",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-2",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-3",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-4",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-5",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-6",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-7",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-8",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-9",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-10",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-11",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-12",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-13",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-14",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-15",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-16",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-17",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-18",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-19",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-20",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-21",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-22",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-23",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-24",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-25",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-26",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-27",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-28",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-29",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-30",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-31",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-32",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-33",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-34",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-35",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-36",
+          "kind": "policy",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-37",
+          "kind": "text",
+          "validated": true,
+          "quotedCost": 0.001,
+          "attempts": 1
+        },
+        {
+          "id": "synthetic-38",
+          "kind": "rich",
+          "validated": true,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-39",
+          "kind": "budget",
+          "validated": false,
+          "quotedCost": 0,
+          "attempts": 0
+        },
+        {
+          "id": "synthetic-malformed",
+          "kind": "malformed",
+          "validated": false,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-timeout",
+          "kind": "timeout",
+          "validated": false,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-provider-failure",
+          "kind": "provider-failure",
+          "validated": false,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        },
+        {
+          "id": "synthetic-missing-evidence",
+          "kind": "missing-evidence",
+          "validated": false,
+          "quotedCost": 0.0025,
+          "attempts": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "mode": "SOLANA_SANDBOX",
+  "implementation": "x402 Foundation SVM client, Express gate and facilitator",
+  "rpc": "https://402.surfnet.dev:8899",
+  "unpaidHttpStatus": 402,
+  "paidHttpStatus": 200,
+  "amountUsd": 0.001,
+  "transaction": "4vTL6gXqDPd7xVyQ7XnL3WJKReStCeep4FSrt8udVRyKsUdX5DkxGXzVb42WxHWM7tkaFEy3xBfGV2u1aJrYHG1Y",
+  "receiptSuccess": true,
+  "chainChecks": ["signature status without error", "USDC payer debit matches amount", "USDC recipient credit matches amount"],
+  "mainnetPayment": false,
+  "liveCatalogPurchased": false,
+  "liveOpenAIAgentResumed": false
+}

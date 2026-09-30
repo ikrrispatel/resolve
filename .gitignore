@@ -1,1 +1,45 @@
+# Credentials and wallet/key material
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keychain
+*.keychain-db
+*keypair*.json
+*wallet*.json
+credentials*.json
+secrets*.json
+.npmrc
+
+# Dependencies, generated builds and local diagnostics
+node_modules/
+.next/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+*.log
+.DS_Store
+work/
+.cache/
+.agents/
+.claude/
+skills-lock.json
+scripts/catalog-first-proof.ts
+scripts/catalog-vision-proof.ts
+
+# Only reviewed, non-secret demo evidence is published
+outputs/*
+!outputs/benchmark.json
+!outputs/payment-proof.json
+!outputs/agent-payment-proof.json
+!outputs/final-verification.json
+!outputs/policy-event-proof.json
+!outputs/evidence-event-proof.json
+!outputs/abstain-event-proof.json
+!outputs/backend-readiness/
+outputs/backend-readiness/*
+!outputs/backend-readiness/*.json

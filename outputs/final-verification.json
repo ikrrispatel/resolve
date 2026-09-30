@@ -1,0 +1,59 @@
+{
+  "at": "2026-09-30T19:20:06.616Z",
+  "testsPassed": 28,
+  "buildPassed": true,
+  "browserFlowsVerified": true,
+  "resetVerified": true,
+  "replayVerified": true,
+  "mainnetDebuggingClosed": true,
+  "benchmark": "VALIDATION_ONLY_NO_PAYMENT",
+  "results": [
+    {
+      "flow": "policy",
+      "mode": "SANDBOX_POLICY",
+      "payments": [
+        {
+          "resolverId": "policy-verifier",
+          "amount": 0.001,
+          "spent": 0.001,
+          "transaction": "DKc3UFDumEQat6MhGparL9SgPU5AFxcyonjSf1jqVxnD2qnBGpUxufZPpY4H8wWenhVC6A5ayWjCpmaqeBvyQvv",
+          "network": "sandbox"
+        }
+      ],
+      "resumed": true,
+      "receiptIssued": true,
+      "abstained": false
+    },
+    {
+      "flow": "evidence",
+      "mode": "SANDBOX_FIXTURE_FALLBACK",
+      "payments": [
+        {
+          "resolverId": "fixture-text",
+          "amount": 0.001,
+          "spent": 0.001,
+          "transaction": "KgaqBTnGHr92x2WFyuQxJVjfRBjmeuvC9MbsqZMSC7JktgFwWi8Hhfny6NH4NeT4M7dZWLdjkAWx1zGJYqNcdNo",
+          "network": "sandbox"
+        },
+        {
+          "resolverId": "fixture-rich",
+          "amount": 0.0015,
+          "spent": 0.0025,
+          "transaction": "2HxAQCb53TwEehsvCGWReGZ4spBxWzmeMD3xRZ1M2WZDrNUq7FDvDKWx7FicMQ43SPCYGw5yyM6RsKXupHCJyNNf",
+          "network": "sandbox"
+        }
+      ],
+      "resumed": true,
+      "receiptIssued": true,
+      "abstained": false
+    },
+    {
+      "flow": "abstain",
+      "mode": "SANDBOX_POLICY",
+      "payments": [],
+      "resumed": false,
+      "receiptIssued": false,
+      "abstained": true
+    }
+  ]
+}

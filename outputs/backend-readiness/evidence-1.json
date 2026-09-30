@@ -1,0 +1,238 @@
+[
+  {
+    "id": "1689ffb2-13dc-4ece-8671-d6cc599b60c9",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 0,
+    "type": "EXCEPTION_CREATED",
+    "at": "2026-09-30T19:29:26.394Z",
+    "data": {
+      "exceptionId": "106af3d1-3f54-46da-8122-8fa6d7bd0cd0",
+      "type": "EVIDENCE_GAP",
+      "task": "Review image evidence",
+      "mode": "SANDBOX_FIXTURE_ESCALATION",
+      "agentRuntime": "OpenAI Agents JS",
+      "reason": "PENDING_TOOL_REQUIRES_VERIFIED_RESOLUTION"
+    }
+  },
+  {
+    "id": "b0961634-3d84-45c8-af9e-7b71545b2512",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 1,
+    "type": "CONTRACT_CREATED",
+    "at": "2026-09-30T19:29:26.394Z",
+    "data": {
+      "contractId": "9646fc8e-140f-490e-b0dc-50b5d2067b4d",
+      "budget": {
+        "maxTotal": 0.05,
+        "maxAttempt": 0.05
+      },
+      "kind": "evidence",
+      "requiredState": {
+        "text_evidence": true,
+        "logo_or_label_evidence": true,
+        "product_or_web_entity_evidence": true
+      }
+    }
+  },
+  {
+    "id": "dd49eaa0-58a1-48e7-98e8-77eb74dcb36d",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 2,
+    "type": "RESOLVER_SELECTED",
+    "at": "2026-09-30T19:29:26.394Z",
+    "data": {
+      "resolverId": "fixture-text",
+      "name": "Text evidence fixture",
+      "quotedPrice": 0.001,
+      "prior": "high"
+    }
+  },
+  {
+    "id": "95021cef-917d-4634-8119-244facd68447",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 3,
+    "type": "PAYMENT_REQUIRED",
+    "at": "2026-09-30T19:29:26.397Z",
+    "data": {
+      "amount": 0.001
+    }
+  },
+  {
+    "id": "0fc70c54-9002-4587-8f5c-8cc9fa825549",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 4,
+    "type": "PAYMENT_AUTHORIZED",
+    "at": "2026-09-30T19:29:26.397Z",
+    "data": {
+      "amount": 0.001,
+      "reason": "BUDGET_GUARD"
+    }
+  },
+  {
+    "id": "865f5abc-1f1e-473c-82d0-271afbd26f93",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 5,
+    "type": "PAYMENT_SETTLED",
+    "at": "2026-09-30T19:29:27.747Z",
+    "data": {
+      "resolverId": "fixture-text",
+      "amount": 0.001,
+      "spent": 0.001,
+      "transaction": "3DUkoS7nBsekbyMapvvKn9HjV9eghaD8iiQRffMDsHRDMca7JCFjx1tCcXXwbeRg4jBDbUhNF2bgJv6PsXMQV6xB",
+      "network": "sandbox"
+    }
+  },
+  {
+    "id": "80eb8e30-6036-4ad9-aa22-35486c637365",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 6,
+    "type": "RESULT_RECEIVED",
+    "at": "2026-09-30T19:29:27.747Z",
+    "data": {
+      "resolverId": "fixture-text"
+    }
+  },
+  {
+    "id": "66dcf18a-973c-4805-b3d5-e1e834bf53e8",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 7,
+    "type": "VALIDATION_FAILED",
+    "at": "2026-09-30T19:29:27.748Z",
+    "data": {
+      "resolverId": "fixture-text",
+      "checks": {
+        "text_evidence": true,
+        "logo_or_label_evidence": false,
+        "product_or_web_entity_evidence": false
+      }
+    }
+  },
+  {
+    "id": "101e990f-5f6a-4ae6-a1b1-08578af2cb2a",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 8,
+    "type": "ESCALATING",
+    "at": "2026-09-30T19:29:27.748Z",
+    "data": {
+      "from": "fixture-text"
+    }
+  },
+  {
+    "id": "76e0c201-eb21-4736-9161-ec3ea962b4e5",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 9,
+    "type": "RESOLVER_SELECTED",
+    "at": "2026-09-30T19:29:27.748Z",
+    "data": {
+      "resolverId": "fixture-rich",
+      "name": "Rich evidence fixture",
+      "quotedPrice": 0.0015,
+      "prior": "high"
+    }
+  },
+  {
+    "id": "2c80dd73-6e89-4893-81f5-e5f77b9e1cb6",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 10,
+    "type": "PAYMENT_REQUIRED",
+    "at": "2026-09-30T19:29:27.753Z",
+    "data": {
+      "amount": 0.0015
+    }
+  },
+  {
+    "id": "cec9f06a-5c6b-4f9d-b695-45f6cfcc8b0f",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 11,
+    "type": "PAYMENT_AUTHORIZED",
+    "at": "2026-09-30T19:29:27.753Z",
+    "data": {
+      "amount": 0.0015,
+      "reason": "BUDGET_GUARD"
+    }
+  },
+  {
+    "id": "ec948d08-4f72-4ec8-b531-56e707d6b3b8",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 12,
+    "type": "PAYMENT_SETTLED",
+    "at": "2026-09-30T19:29:29.059Z",
+    "data": {
+      "resolverId": "fixture-rich",
+      "amount": 0.0015,
+      "spent": 0.0025,
+      "transaction": "5HQkms7mfxCUQcYeF69DCZFqoRChUQKaevuKX5Rx9wdys8tVEtCqUdfnaXvLaPtDYpEBuDQbYyN38QjPCaFANGjJ",
+      "network": "sandbox"
+    }
+  },
+  {
+    "id": "f654b5e6-7a0b-486f-8f9e-ef2b6dc630a7",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 13,
+    "type": "RESULT_RECEIVED",
+    "at": "2026-09-30T19:29:29.059Z",
+    "data": {
+      "resolverId": "fixture-rich"
+    }
+  },
+  {
+    "id": "2ebd14f5-b918-4b1e-97d3-027d9e2752ea",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 14,
+    "type": "VALIDATION_PASSED",
+    "at": "2026-09-30T19:29:29.059Z",
+    "data": {
+      "resolverId": "fixture-rich",
+      "checks": {
+        "text_evidence": true,
+        "logo_or_label_evidence": true,
+        "product_or_web_entity_evidence": true
+      }
+    }
+  },
+  {
+    "id": "23725d71-ee97-4085-8c90-813c855905a6",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 15,
+    "type": "RECEIPT_ISSUED",
+    "at": "2026-09-30T19:29:29.059Z",
+    "data": {
+      "receipt": {
+        "id": "7515acbd-7806-4517-af12-bd8361adb8b1",
+        "contractId": "9646fc8e-140f-490e-b0dc-50b5d2067b4d",
+        "resolverId": "fixture-rich",
+        "cost": 0.0015,
+        "paymentStatus": "SETTLED",
+        "verificationStatus": "PASS",
+        "result": {
+          "provider": "SYNTHETIC_RICH_FIXTURE",
+          "textEvidence": [
+            "EXAMPLE CAMERA"
+          ],
+          "logoOrLabelEvidence": [
+            "Camera"
+          ],
+          "productOrWebEntityEvidence": [
+            "Digital camera"
+          ]
+        },
+        "createdAt": "2026-09-30T19:29:29.059Z",
+        "transaction": "5HQkms7mfxCUQcYeF69DCZFqoRChUQKaevuKX5Rx9wdys8tVEtCqUdfnaXvLaPtDYpEBuDQbYyN38QjPCaFANGjJ",
+        "network": "sandbox"
+      }
+    }
+  },
+  {
+    "id": "713abeca-2abc-4f78-a83a-69a736bb84d2",
+    "runId": "b7bc4f77-1407-4aa0-8da7-11114a5b5df4",
+    "sequence": 16,
+    "type": "AGENT_RESUMED",
+    "at": "2026-09-30T19:29:29.061Z",
+    "data": {
+      "message": "Required image evidence is present. Continue the local review; authenticity is not established.",
+      "receiptId": "7515acbd-7806-4517-af12-bd8361adb8b1",
+      "runtime": "OpenAI Agents JS",
+      "delivery": "Local negotiation transcript; no external message sent"
+    }
+  }
+]

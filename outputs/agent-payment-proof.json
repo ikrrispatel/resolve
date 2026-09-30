@@ -1,0 +1,15 @@
+{
+  "observedAt": "2026-09-30T18:49:40.342Z",
+  "command": "npm run demo:policy -- --agent",
+  "runtime": "OpenAI Agents JS",
+  "liveModel": true,
+  "network": "sandbox",
+  "amountUsd": 0.001,
+  "transaction": "ygxzmEe7g78wmgmHCz14fUKEQdtLK2T267iX3ssvSK5nCK9cymHP7b7zwdhJGVoAh4uZCg3XayPENcCWMVpvkk8",
+  "receiptId": "0f659e33-7135-43e0-ab25-00bf1f5b3b84",
+  "paymentStatus": "SETTLED",
+  "verificationStatus": "PASS",
+  "agentResumed": true,
+  "message": "I can do $900. If that works, I can send a public pickup location.",
+  "delivery": "Local negotiation transcript; no external message sent"
+}
