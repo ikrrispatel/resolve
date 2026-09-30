@@ -1,4 +1,4 @@
-https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-demo.mp4
+https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-demo-3min.mp4
 
 # RESOLVE
 
@@ -20,7 +20,7 @@ AGENT RESUMED ← ResolutionReceipt ← SuccessContract ← PAID CAPABILITY
 
 ## Demo
 
-🎥 [Watch or download the two-minute Resolve demo](https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-demo.mp4) — 1080p, with narration and captions.
+🎥 [Watch or download the three-minute Resolve demo](https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-demo-3min.mp4) — 1080p, light theme, with narration, captions, and original sound effects.
 
 Recorded execution with edited timing: real sandbox settlements, deterministic provider payloads, and a synthetic validation-only benchmark. AI-generated narration.
 
