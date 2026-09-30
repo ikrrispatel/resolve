@@ -9,14 +9,11 @@ verify the result, escalate when necessary, or stop safely.
 
 ## Demo
 
-[Watch the 3-minute demo](https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-final-submission.mp4)
+[Watch the 3-minute demo](https://youtu.be/gv80INmBMuI)
 
 Recorded UI replays and captured CLI output with edited timing. Real sandbox payments, deterministic provider payloads, and a validation-only benchmark. AI-generated narration.
 
-Copyable video URL:
-```text
-https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-final-submission.mp4
-```
+**Direct MP4:** [resolve-final-submission.mp4](https://raw.githubusercontent.com/ikrrispatel/resolve/main/docs/assets/resolve-final-submission.mp4)
 
 ## Why
 
