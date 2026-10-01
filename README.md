@@ -9,7 +9,7 @@ verify the result, escalate when necessary, or stop safely.
 
 ## Demo
 
-[Watch the 3-minute demo](https://youtu.be/gv80INmBMuI)
+[Watch the 3-minute demo](https://youtu.be/H2WK01r4Qfk)
 
 Recorded UI replays and captured CLI output with edited timing. Real sandbox payments, deterministic provider payloads, and a validation-only benchmark. AI-generated narration.
 
